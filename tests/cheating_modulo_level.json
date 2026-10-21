@@ -1,0 +1,246 @@
+{
+  "mission_id": "TEST_CHEAT_LEVEL",
+  "width": 300.0,
+  "height": 300.0,
+  "zones": [
+    {
+      "id": "zone_int_1",
+      "zone_type": "interior",
+      "bounds": [
+        40.0,
+        40.0,
+        60.0,
+        60.0
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "id": "bldg_main",
+      "type": "env_bldg_barracks_a",
+      "pos": [
+        50.0,
+        50.0,
+        0.0
+      ],
+      "bounds": [
+        40.0,
+        40.0,
+        60.0,
+        60.0
+      ],
+      "doorways": [
+        [
+          50.0,
+          40.0
+        ]
+      ]
+    },
+    {
+      "id": "floating_fence_01",
+      "type": "env_fence_chainlink_4m",
+      "start": [
+        120.0,
+        120.0
+      ],
+      "end": [
+        124.0,
+        120.0
+      ]
+    }
+  ],
+  "props": [],
+  "traps": [
+    {
+      "id": "bad_cam",
+      "type": "T11",
+      "pos": [
+        180.0,
+        180.0,
+        3.0
+      ]
+    },
+    {
+      "id": "bad_laser",
+      "type": "T5",
+      "pos": [
+        200.0,
+        200.0,
+        1.0
+      ]
+    },
+    {
+      "id": "bad_efence",
+      "type": "T12",
+      "pos": [
+        120.0,
+        120.0,
+        0.0
+      ],
+      "power_source_id": "nonexistent_box"
+    },
+    {
+      "id": "bad_door",
+      "type": "T13",
+      "pos": [
+        95.0,
+        95.0,
+        0.0
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "id": "cheat_e_0",
+      "class": "E6",
+      "pos": [
+        47.0,
+        68.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          35.0,
+          44.0
+        ],
+        [
+          65.0,
+          44.0
+        ]
+      ]
+    },
+    {
+      "id": "cheat_e_1",
+      "class": "E2",
+      "pos": [
+        84.0,
+        121.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          35.0,
+          44.0
+        ],
+        [
+          65.0,
+          44.0
+        ]
+      ]
+    },
+    {
+      "id": "cheat_e_2",
+      "class": "E2",
+      "pos": [
+        121.0,
+        174.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          35.0,
+          44.0
+        ],
+        [
+          65.0,
+          44.0
+        ]
+      ]
+    },
+    {
+      "id": "cheat_e_3",
+      "class": "E2",
+      "pos": [
+        158.0,
+        227.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          35.0,
+          44.0
+        ],
+        [
+          65.0,
+          44.0
+        ]
+      ]
+    },
+    {
+      "id": "cheat_e_4",
+      "class": "E2",
+      "pos": [
+        195.0,
+        280.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          35.0,
+          44.0
+        ],
+        [
+          65.0,
+          44.0
+        ]
+      ]
+    },
+    {
+      "id": "cheat_e_5",
+      "class": "E2",
+      "pos": [
+        232.0,
+        33.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          35.0,
+          44.0
+        ],
+        [
+          65.0,
+          44.0
+        ]
+      ]
+    },
+    {
+      "id": "cheat_e_6",
+      "class": "E2",
+      "pos": [
+        269.0,
+        86.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          35.0,
+          44.0
+        ],
+        [
+          65.0,
+          44.0
+        ]
+      ]
+    },
+    {
+      "id": "cheat_e_7",
+      "class": "E2",
+      "pos": [
+        6.0,
+        139.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          35.0,
+          44.0
+        ],
+        [
+          65.0,
+          44.0
+        ]
+      ]
+    }
+  ]
+}

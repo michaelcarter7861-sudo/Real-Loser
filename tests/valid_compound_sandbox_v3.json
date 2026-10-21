@@ -1,0 +1,450 @@
+{
+  "mission_id": "PHASE0_VALID_COMPOUND",
+  "width": 300.0,
+  "height": 300.0,
+  "zones": [
+    {
+      "id": "zone_guardhouse_int",
+      "zone_type": "interior",
+      "bounds": [
+        40.0,
+        40.0,
+        52.0,
+        48.0
+      ]
+    },
+    {
+      "id": "zone_courtyard_ext",
+      "zone_type": "exterior",
+      "bounds": [
+        28.0,
+        28.0,
+        60.0,
+        52.0
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "id": "bldg_guardhouse_01",
+      "type": "env_bldg_guardhouse_a",
+      "pos": [
+        46.0,
+        44.0,
+        0.0
+      ],
+      "bounds": [
+        40.0,
+        40.0,
+        52.0,
+        48.0
+      ],
+      "doorways": [
+        [
+          46.0,
+          40.0
+        ],
+        [
+          52.0,
+          44.0
+        ]
+      ]
+    },
+    {
+      "id": "wt_northwest",
+      "type": "env_watchtower_metal_a",
+      "pos": [
+        32.0,
+        32.0,
+        0.0
+      ],
+      "radius": 3.0
+    },
+    {
+      "id": "wall_b1",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        32.0,
+        30.0,
+        0.0
+      ],
+      "start": [
+        30.0,
+        30.0
+      ],
+      "end": [
+        34.0,
+        30.0
+      ]
+    },
+    {
+      "id": "wall_r1",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        42.0,
+        32.0,
+        0.0
+      ],
+      "start": [
+        42.0,
+        30.0
+      ],
+      "end": [
+        42.0,
+        34.0
+      ]
+    },
+    {
+      "id": "wall_t1",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        40.0,
+        38.0,
+        0.0
+      ],
+      "start": [
+        42.0,
+        38.0
+      ],
+      "end": [
+        38.0,
+        38.0
+      ]
+    },
+    {
+      "id": "wall_l1",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        30.0,
+        36.0,
+        0.0
+      ],
+      "start": [
+        30.0,
+        38.0
+      ],
+      "end": [
+        30.0,
+        34.0
+      ]
+    },
+    {
+      "id": "wall_b2",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        36.0,
+        30.0,
+        0.0
+      ],
+      "start": [
+        34.0,
+        30.0
+      ],
+      "end": [
+        38.0,
+        30.0
+      ]
+    },
+    {
+      "id": "wall_r2",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        42.0,
+        36.0,
+        0.0
+      ],
+      "start": [
+        42.0,
+        34.0
+      ],
+      "end": [
+        42.0,
+        38.0
+      ]
+    },
+    {
+      "id": "wall_t2",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        36.0,
+        38.0,
+        0.0
+      ],
+      "start": [
+        38.0,
+        38.0
+      ],
+      "end": [
+        34.0,
+        38.0
+      ]
+    },
+    {
+      "id": "wall_l2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        30.0,
+        32.0,
+        0.0
+      ],
+      "start": [
+        30.0,
+        34.0
+      ],
+      "end": [
+        30.0,
+        30.0
+      ]
+    },
+    {
+      "id": "wall_b3",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        40.0,
+        30.0,
+        0.0
+      ],
+      "start": [
+        38.0,
+        30.0
+      ],
+      "end": [
+        42.0,
+        30.0
+      ]
+    },
+    {
+      "id": "wall_t3",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        32.0,
+        38.0,
+        0.0
+      ],
+      "start": [
+        34.0,
+        38.0
+      ],
+      "end": [
+        30.0,
+        38.0
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_breaker_box_a_01",
+      "type": "prop_breaker_box_a",
+      "pos": [
+        40.2,
+        42.0,
+        1.2
+      ]
+    },
+    {
+      "id": "prop_generator_diesel_a_01",
+      "type": "prop_generator_diesel_a",
+      "pos": [
+        54.5,
+        46.0,
+        0.0
+      ]
+    },
+    {
+      "id": "prop_locker_01",
+      "type": "prop_locker_metal_a",
+      "pos": [
+        41.0,
+        46.5,
+        0.0
+      ]
+    },
+    {
+      "id": "prop_dumpster_01",
+      "type": "prop_dumpster_metal_a",
+      "pos": [
+        55.2,
+        39.0,
+        0.0
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "id": "trap_searchlight_01",
+      "type": "T10",
+      "pos": [
+        32.2,
+        32.2,
+        8.2
+      ]
+    },
+    {
+      "id": "trap_cam_01",
+      "type": "T11",
+      "pos": [
+        43.0,
+        39.6,
+        3.2
+      ]
+    },
+    {
+      "id": "trap_door_alarm_01",
+      "type": "T13",
+      "pos": [
+        46.0,
+        40.0,
+        0.0
+      ]
+    },
+    {
+      "id": "trap_door_booby_01",
+      "type": "T14",
+      "pos": [
+        52.0,
+        44.0,
+        0.0
+      ]
+    },
+    {
+      "id": "trap_laser_01",
+      "type": "T5",
+      "pos": [
+        46.0,
+        42.2,
+        1.0
+      ]
+    },
+    {
+      "id": "trap_plate_01",
+      "type": "T7",
+      "pos": [
+        48.5,
+        44.0,
+        0.0
+      ]
+    },
+    {
+      "id": "trap_efence_01",
+      "type": "T12",
+      "pos": [
+        30.0,
+        36.0,
+        0.0
+      ],
+      "power_source_id": "prop_breaker_box_a_01"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "enemy_sniper_01",
+      "class": "E6",
+      "pos": [
+        32.0,
+        32.0,
+        8.5
+      ],
+      "elevation": 8.5,
+      "mount": "watchtower",
+      "patrol_waypoints": [
+        [
+          31.5,
+          31.5
+        ],
+        [
+          32.5,
+          31.5
+        ],
+        [
+          32.5,
+          32.5
+        ],
+        [
+          31.5,
+          32.5
+        ]
+      ]
+    },
+    {
+      "id": "enemy_officer_01",
+      "class": "E3",
+      "pos": [
+        35.0,
+        34.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          33.0,
+          33.0
+        ],
+        [
+          39.0,
+          33.0
+        ],
+        [
+          39.5,
+          36.5
+        ],
+        [
+          33.5,
+          36.0
+        ]
+      ]
+    },
+    {
+      "id": "enemy_tech_01",
+      "class": "E9",
+      "pos": [
+        44.0,
+        36.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          43.0,
+          36.0
+        ],
+        [
+          50.0,
+          36.0
+        ],
+        [
+          55.0,
+          38.0
+        ],
+        [
+          46.0,
+          38.5
+        ]
+      ]
+    },
+    {
+      "id": "enemy_medic_01",
+      "class": "E11",
+      "pos": [
+        56.0,
+        42.0,
+        0.0
+      ],
+      "patrol_waypoints": [
+        [
+          55.0,
+          41.0
+        ],
+        [
+          58.0,
+          43.0
+        ],
+        [
+          57.0,
+          49.0
+        ],
+        [
+          54.0,
+          48.0
+        ]
+      ]
+    }
+  ]
+}

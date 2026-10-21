@@ -1,0 +1,210 @@
+{
+  "engine": "Unity 2022.3.40f1 LTS",
+  "sample_rate": 22050,
+  "events": {
+    "sfx_footstep_concrete_stand": {
+      "file": "sfx_footstep_concrete_stand.wav",
+      "category": "footstep",
+      "duration_sec": 0.22,
+      "noise_radius_m": 7.5
+    },
+    "sfx_footstep_concrete_crouch": {
+      "file": "sfx_footstep_concrete_crouch.wav",
+      "category": "footstep",
+      "duration_sec": 0.2,
+      "noise_radius_m": 3.4
+    },
+    "sfx_footstep_metal_stand": {
+      "file": "sfx_footstep_metal_stand.wav",
+      "category": "footstep",
+      "duration_sec": 0.26,
+      "noise_radius_m": 11.0
+    },
+    "sfx_footstep_gravel_stand": {
+      "file": "sfx_footstep_gravel_stand.wav",
+      "category": "footstep",
+      "duration_sec": 0.28,
+      "noise_radius_m": 12.5
+    },
+    "sfx_footstep_grass_prone": {
+      "file": "sfx_footstep_grass_prone.wav",
+      "category": "footstep",
+      "duration_sec": 0.24,
+      "noise_radius_m": 0.8
+    },
+    "sfx_wpn_pistol_fire": {
+      "file": "sfx_wpn_pistol_fire.wav",
+      "category": "weapon",
+      "duration_sec": 0.38,
+      "noise_radius_m": 38.0
+    },
+    "sfx_wpn_pistol_suppressed": {
+      "file": "sfx_wpn_pistol_suppressed.wav",
+      "category": "weapon",
+      "duration_sec": 0.22,
+      "noise_radius_m": 8.5
+    },
+    "sfx_wpn_rifle_fire": {
+      "file": "sfx_wpn_rifle_fire.wav",
+      "category": "weapon",
+      "duration_sec": 0.46,
+      "noise_radius_m": 62.0
+    },
+    "sfx_wpn_sniper_fire": {
+      "file": "sfx_wpn_sniper_fire.wav",
+      "category": "weapon",
+      "duration_sec": 0.68,
+      "noise_radius_m": 95.0
+    },
+    "sfx_wpn_shotgun_fire": {
+      "file": "sfx_wpn_shotgun_fire.wav",
+      "category": "weapon",
+      "duration_sec": 0.55,
+      "noise_radius_m": 72.0
+    },
+    "sfx_wpn_reload_mag": {
+      "file": "sfx_wpn_reload_mag.wav",
+      "category": "weapon",
+      "duration_sec": 0.32,
+      "noise_radius_m": 3.0
+    },
+    "sfx_melee_knife_slash": {
+      "file": "sfx_melee_knife_slash.wav",
+      "category": "melee",
+      "duration_sec": 0.2,
+      "noise_radius_m": 2.5
+    },
+    "sfx_melee_garrote_choke": {
+      "file": "sfx_melee_garrote_choke.wav",
+      "category": "melee",
+      "duration_sec": 0.35,
+      "noise_radius_m": 0.8
+    },
+    "sfx_trap_t1_tripwire_alarm": {
+      "file": "sfx_trap_t1_tripwire_alarm.wav",
+      "category": "trap",
+      "duration_sec": 0.65,
+      "noise_radius_m": 40.0
+    },
+    "sfx_trap_t2_grenade_detonate": {
+      "file": "sfx_trap_t2_grenade_detonate.wav",
+      "category": "trap",
+      "duration_sec": 0.75,
+      "noise_radius_m": 55.0
+    },
+    "sfx_trap_t3_claymore_blast": {
+      "file": "sfx_trap_t3_claymore_blast.wav",
+      "category": "trap",
+      "duration_sec": 0.78,
+      "noise_radius_m": 60.0
+    },
+    "sfx_trap_t4_mine_click_blast": {
+      "file": "sfx_trap_t4_mine_click_blast.wav",
+      "category": "trap",
+      "duration_sec": 0.82,
+      "noise_radius_m": 65.0
+    },
+    "sfx_trap_t5_laser_hum_alarm": {
+      "file": "sfx_trap_t5_laser_hum_alarm.wav",
+      "category": "trap",
+      "duration_sec": 0.5,
+      "noise_radius_m": 45.0
+    },
+    "sfx_trap_t6_motion_sensor_chirp": {
+      "file": "sfx_trap_t6_motion_sensor_chirp.wav",
+      "category": "trap",
+      "duration_sec": 0.34,
+      "noise_radius_m": 35.0
+    },
+    "sfx_trap_t7_pressure_plate_click": {
+      "file": "sfx_trap_t7_pressure_plate_click.wav",
+      "category": "trap",
+      "duration_sec": 0.25,
+      "noise_radius_m": 40.0
+    },
+    "sfx_trap_t8_noise_cans_rattle": {
+      "file": "sfx_trap_t8_noise_cans_rattle.wav",
+      "category": "trap",
+      "duration_sec": 0.48,
+      "noise_radius_m": 15.0
+    },
+    "sfx_trap_t9_turret_servo_burst": {
+      "file": "sfx_trap_t9_turret_servo_burst.wav",
+      "category": "trap",
+      "duration_sec": 0.56,
+      "noise_radius_m": 50.0
+    },
+    "sfx_trap_t10_searchlight_hum": {
+      "file": "sfx_trap_t10_searchlight_hum.wav",
+      "category": "trap",
+      "duration_sec": 0.45,
+      "noise_radius_m": 6.0
+    },
+    "sfx_trap_t11_camera_servo_beep": {
+      "file": "sfx_trap_t11_camera_servo_beep.wav",
+      "category": "trap",
+      "duration_sec": 0.36,
+      "noise_radius_m": 35.0
+    },
+    "sfx_trap_t12_electric_fence_arc": {
+      "file": "sfx_trap_t12_electric_fence_arc.wav",
+      "category": "trap",
+      "duration_sec": 0.42,
+      "noise_radius_m": 14.0
+    },
+    "sfx_trap_t13_alarmed_door_siren": {
+      "file": "sfx_trap_t13_alarmed_door_siren.wav",
+      "category": "trap",
+      "duration_sec": 0.7,
+      "noise_radius_m": 45.0
+    },
+    "sfx_trap_t14_booby_door_snap": {
+      "file": "sfx_trap_t14_booby_door_snap.wav",
+      "category": "trap",
+      "duration_sec": 0.64,
+      "noise_radius_m": 50.0
+    },
+    "sfx_trap_t15_guard_dog_bark": {
+      "file": "sfx_trap_t15_guard_dog_bark.wav",
+      "category": "trap",
+      "duration_sec": 0.44,
+      "noise_radius_m": 28.0
+    },
+    "sfx_trap_t16_steam_vent_hiss": {
+      "file": "sfx_trap_t16_steam_vent_hiss.wav",
+      "category": "trap",
+      "duration_sec": 0.58,
+      "noise_radius_m": 12.0
+    },
+    "sfx_gadget_emp_pulse": {
+      "file": "sfx_gadget_emp_pulse.wav",
+      "category": "gadget",
+      "duration_sec": 0.52,
+      "noise_radius_m": 10.0
+    },
+    "sfx_gadget_pda_hack_complete": {
+      "file": "sfx_gadget_pda_hack_complete.wav",
+      "category": "gadget",
+      "duration_sec": 0.3,
+      "noise_radius_m": 1.5
+    },
+    "sfx_gadget_wire_cutter_snip": {
+      "file": "sfx_gadget_wire_cutter_snip.wav",
+      "category": "gadget",
+      "duration_sec": 0.2,
+      "noise_radius_m": 1.2
+    },
+    "sfx_ai_radio_checkin_beep": {
+      "file": "sfx_ai_radio_checkin_beep.wav",
+      "category": "ai_comms",
+      "duration_sec": 0.32,
+      "noise_radius_m": 4.0
+    },
+    "sfx_compound_klaxon_alert2": {
+      "file": "sfx_compound_klaxon_alert2.wav",
+      "category": "alarm",
+      "duration_sec": 0.85,
+      "noise_radius_m": 80.0
+    }
+  }
+}

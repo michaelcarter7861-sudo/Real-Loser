@@ -1,0 +1,8 @@
+Project Real Loser RC1.3 source validation
+stable_seed_added: PASS
+snow_mission_corrected: PASS
+M06_refinery_landmarks: PASS
+M09_tunnel_landmarks: PASS
+brace_count_balanced: PASS
+Unity compile/runtime validation: NOT RUN (Unity editor/build environment unavailable in this task).
+APK build: intentionally not run.

@@ -1,0 +1,1391 @@
+{
+  "barrier_sha256": "588e6f344bd97b6f1a44b9f25c2801a72ccf7328a7f7a8cd36c269d6e4a3d435",
+  "category_counts": {
+    "Characters": 24,
+    "Environment": 15,
+    "Traps": 16,
+    "Weapons": 26
+  },
+  "expected_modified": 80,
+  "expected_total": 81,
+  "files": {
+    "Characters/chr_boss_captain_dar.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "4e586f526be7255a868f56f74ec5693cb32e370eb9072b9ad890576a239bd122",
+        "buffer_view_count": 16,
+        "json_sha256": "a7ff46861e2a8e2f6e3a330a3622ea77c166b9b8e2de270b0cc83c4c9b3a2de2",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "053959fd893e698f53f7549b5744c566c35f92b712461bc1259d9dc5e0f2689f"
+    },
+    "Characters/chr_boss_commander_rask.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 52224,
+        "bin_prefix_sha256": "3cc31f2363d05f658896403dece566f74b7852a1aaae323b66021c9c90bd724b",
+        "buffer_view_count": 16,
+        "json_sha256": "315d8e80f022eca190f760632a3e5ff24bcae86e768ff1adc1f2deed353588bc",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "c72e401bfcaf035615bddb330710750619afe6647b8f1f75c32a155588af9367"
+    },
+    "Characters/chr_boss_viktor_hale.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "7064cf107ab433190e5aea06cd7f05a0a6da2d87164d8da0bb612038e6900d09",
+        "buffer_view_count": 16,
+        "json_sha256": "7ee757f3e74efc351b95986c2ff24553dac196c315d4b20d48e3b3e479e3077f",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "b4a79da7496be61dc8d66f06dedb83dfc4a3a10dbcd09a1bd3a1d569097e32d3"
+    },
+    "Characters/chr_civ_hostage_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "6ebc484251bba433e600fdee6176c719c6c40fc6943ad6dd4af36cc5ff114b10",
+        "buffer_view_count": 16,
+        "json_sha256": "e22c7e0ab8f5b5e416fa0c6a6004c9214e26563dabe72b7a9223abb7d73c845a",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "ba2d94f272565c9870961c154d63b5d957dadd1d9411daff678336525073cbfb"
+    },
+    "Characters/chr_civ_scientist_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "b59afffd6721d1c2bc8d8b69bafcd9664eac1a087a88751b4d1e090c8bcb8f21",
+        "buffer_view_count": 16,
+        "json_sha256": "921ddc2f7ea44339ac6ccce166f5ec766fb3afb0c0f15579457f2c41e38c6061",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "32683cc32e17863735d9e2beb69b2f8cb8f0f1aad5d7495507ab117f5bfa7e04"
+    },
+    "Characters/chr_civ_technician_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "4932456576bb752c0e15ba37f7b12413fc7708cfceae060e8b50ef5939f1e8f5",
+        "buffer_view_count": 16,
+        "json_sha256": "e8e9b1cf9b638a18a5e687c986527ddc571656b8ead5331e5abe09cb982f9c2b",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "978174a009fd1ac5c763c8577cad7e19a12e9c0f4d3615601005cc5d55aed932"
+    },
+    "Characters/chr_civ_worker_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "76ea6a3b8879e24579f6467531eb0883e38aa4dedd9ca44073e951385460ca16",
+        "buffer_view_count": 16,
+        "json_sha256": "2408c8668e7a7dea2b77e81d2a71ce56396b35ea32ab92120798889de9877361",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "b581aa3d5c24199b6b9a0765f1abe4b7c1a2edbe12f69b6fbb6ef06b378e6a7c"
+    },
+    "Characters/chr_enemy_e10_dog_handler.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "508bd4c6cb757dce2e63896a991ca693df529d4bc79518321157b6628a4d38f3",
+        "buffer_view_count": 16,
+        "json_sha256": "1d0375d5862ec78c53bf1f0a5d23efbfa7215181716735d5ad59fa0a9c8949d4",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "d56c70abde4822a05a87d8d623fbe7c9b77235fd3598d9a4e8e70d4af2c331b1"
+    },
+    "Characters/chr_enemy_e11_medic.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 52224,
+        "bin_prefix_sha256": "d4da104f322dc283f0b0b2b979b87d3c2836fb57e87ca6a6bfc846940184fbbd",
+        "buffer_view_count": 16,
+        "json_sha256": "852898b221dfeeeee71be95f4117dd578d036b2495611d6e0b58606ac79b40a9",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "8c9e1d7313339f0fbccdd2919c4742076375d49ba57cc5eecccd16d5011bf72a"
+    },
+    "Characters/chr_enemy_e12_elite_commando.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "a2b7123983a73faa54a6908c009a5d0a57b611360d276c41bfbd8d44e164278e",
+        "buffer_view_count": 16,
+        "json_sha256": "7df726560d4be73f505f3ac1a46d59e6c87f89d5f2fdf1481b1a05485c6e3f3b",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "64df9cba6e85d65d2b2b233d37f654410828ba2233639a2a3c888cf4e1b14169"
+    },
+    "Characters/chr_enemy_e13_ghillie_spotter.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 52224,
+        "bin_prefix_sha256": "5902ddb9e81eeee88891b8c395044281955b184fa0f7dce82307337d4441dbd3",
+        "buffer_view_count": 16,
+        "json_sha256": "019c2cc7ab43f2a7f51a536bb2811925e3f58b72a9753372ce0122fc36efe741",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "06bd710bd6070e15e4a31bdac9c58e6ea07efc83e6a58b60447a63e9155dd9eb"
+    },
+    "Characters/chr_enemy_e14_juggernaut.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 52224,
+        "bin_prefix_sha256": "25bdf372ca60cecbb41d99187e9d240622f29dcddb9ce202bef6ac281a82f611",
+        "buffer_view_count": 16,
+        "json_sha256": "3f1bffa280567306e38bafd09761dfc8579867053e4eb272a6f8de44336639a4",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "ae868b238c140837f5c1b642a4248224b01bedc6559b1d1457cd842c5328a218"
+    },
+    "Characters/chr_enemy_e1_recruit.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "1810fd54ab8dbf38f68bbea57dccfe18c9c0e5b522456b9420e16337f50d9908",
+        "buffer_view_count": 16,
+        "json_sha256": "432ac711cb64df104edfef027f2f583706476aef1c2dda3fb93f68bc582429c2",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "1a60fbeae6f479bc2d3426793b1b247b0f68bd3595d543bca0cad2978babee0a"
+    },
+    "Characters/chr_enemy_e2_rifleman.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "94a6e13e41ebdc1b132fea80333886fa4f814ffb8b20935efaf94929d45c0613",
+        "buffer_view_count": 16,
+        "json_sha256": "9586748186799ac2a62d9ecad9b81b023678062a4a5fd95797c359769d8c6ed2",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "4cb92231a6b8085cc640899d8f31221b0fe77b841b59e06fd505c43826715f48"
+    },
+    "Characters/chr_enemy_e3_officer.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "ce5a4da8f3197e91cbf2926032cf9da98cecacfcd14ca5d3b5103a160a9211d5",
+        "buffer_view_count": 16,
+        "json_sha256": "df6682cfd88b78745289fbae0b04722aa29bc6dddc92a2211c0fd62aa27ff6b0",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "fe0990b98a058d33aebbbbc1e73c5259c0c1d5eee160d729e0c3989b33f6890e"
+    },
+    "Characters/chr_enemy_e4_shotgunner.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "edd2cdaa0d5223cbe7257c4969190bc644b9ccbbbc5e72a1a5a3a77865150115",
+        "buffer_view_count": 16,
+        "json_sha256": "fe33f8c513f950a0fbd4d7c114dc88ca94ec719d92e96a07d062b1240fad704a",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "f95c7306056a57725cc34fd9a49bda24df702fcd7955036c29e61e16a8c1bec6"
+    },
+    "Characters/chr_enemy_e5_smg_runner.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "5f6e3550a4acbdae77aa158b78c8af0225e12a0f2d8d020539e174dfe6cf8c62",
+        "buffer_view_count": 16,
+        "json_sha256": "73d43cf5fdf7b52734988c9347b63b88082d2903c6d4ad155f8908a735cb9bee",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "fae3544c0cb02ae082e6f8c917f031bc0c93a09fb4162258cf378b10111d8a4e"
+    },
+    "Characters/chr_enemy_e6_sniper.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 52224,
+        "bin_prefix_sha256": "3f86d6b8ca3642b3725a97bfe2e2e547538b82756ea757ad622f32e08a78e9b2",
+        "buffer_view_count": 16,
+        "json_sha256": "7481a19ddb7718fdd3853cce2eb9b6be2e6d9e4abf575f529203d53da4c50145",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "95c3582bb3f9dadaeb94c2b78925367a6b5b9a2a2c9444ab9c1b43a96914b3c9"
+    },
+    "Characters/chr_enemy_e7_heavy_gunner.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 52224,
+        "bin_prefix_sha256": "ce7a347935e97b4bdd18180e45cbcc3ada3b5352a060f8b825f0fd6f4d5169fb",
+        "buffer_view_count": 16,
+        "json_sha256": "819e6fdfa73a5a0c9e02d8a9acc7f5ed12bcef9d81bfd8bcf51c47302f0a05b2",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "6f5c8cce101f6625097973a037d644f83a77bae660d11ae51a5bc6c83069e8ac"
+    },
+    "Characters/chr_enemy_e8_shield_breacher.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 52224,
+        "bin_prefix_sha256": "99db968be49033988ac4d230df0e0794436bf88610d024e2d9b576ab0083be36",
+        "buffer_view_count": 16,
+        "json_sha256": "4517162f1263e2d565897980ecbdb79122e85b6b09b8a69bbdc553e8fbaa20b2",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "30532066a15d550f1bb0c6b4a25188ce89e53071daf55acdbb855907f57ea4df"
+    },
+    "Characters/chr_enemy_e9_technician.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 52224,
+        "bin_prefix_sha256": "dc079318e6e39531db3a2aee98d7b997865d967632f1b93475b4b8f0ffaf4aeb",
+        "buffer_view_count": 16,
+        "json_sha256": "89b17f49f68025affafa436bed7f25ab4d16368785968a094a440592bcb776ca",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "23c4e3ff5f78132efad3c22676ae28b220cc5fb330c8350504df8782dc3fc905"
+    },
+    "Characters/chr_npc_dr_mirza.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "f6760887035fd71ead9d4655ee7b419f01fb9f2e7de8214756e88296a454840f",
+        "buffer_view_count": 16,
+        "json_sha256": "ad9021bf4cd4624d6db0c7ac000e8950b02faaf5efce7e1cbb2ec3c6fe4b5f7f",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "850347bad775e8006636df18690d9e91417b2a9a670ca395bcbddaa726630ac7"
+    },
+    "Characters/chr_npc_informant.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "c0fc95f45a31b6bc84f90ebac12eb6020afaa80c6c2b1a155cf088e63db77c42",
+        "buffer_view_count": 16,
+        "json_sha256": "6092f6283d57dd5b0a2925463257d464c5125313dce201f87e7364a593c06e13",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "e44c6cb797bc3afaca789e341c474adcd5cc33decb0362e35456d4144cda09f2"
+    },
+    "Characters/chr_player_body_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 16,
+        "animation_count": 0,
+        "bin_length": 50880,
+        "bin_prefix_sha256": "643a2c932473a1b5599438390993da310bc2062a2ca821f932570357ebc672e6",
+        "buffer_view_count": 16,
+        "json_sha256": "3d494b6456c875f5c31c2852c838736a7d84a671a51fe61c7f9e63a6476054c3",
+        "material_count": 1,
+        "mesh_count": 3,
+        "node_count": 19,
+        "primitive_count": 3,
+        "skin_count": 1
+      },
+      "source_sha256": "abc6aa09190dfa13d3dbf3be2ff0c5f3f5c74db581ac894f028867e2d79e7a4c"
+    },
+    "Environment/env_bldg_barracks_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "2464eabbe60476de51f72beec66d40b5dd95b9ed66cd796726bcf85d42a71b83",
+        "buffer_view_count": 3,
+        "json_sha256": "ae5cac95d9f0df6137a6254c1fb848428adbc565c69fbb34d9308d2421a17df7",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "d279627743e761e32d4ec3232a05a1b257bc8ec4ad7674ad633fb55839e99fd5"
+    },
+    "Environment/env_bldg_comms_bunker_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "883a2605466c652edf79b109a65eebc351a9fd2fd5bb77a82f830f997d37aec3",
+        "buffer_view_count": 3,
+        "json_sha256": "a1677e3de6b055db1a150a4e68a3d72fd55371ddf1109f11f750fb4518ad2b30",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "59579120ee48b147778289d9d146388c867c7fceab3b7cfd1ac161e4c0c5ca6a"
+    },
+    "Environment/env_bldg_guardhouse_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "022d942794ae52ffaf279d0f42ca92a2321195f12d0eb85c689ef1594eb8c9ec",
+        "buffer_view_count": 3,
+        "json_sha256": "4846cb1e159375d11aba09abf4b0aa605bad0cb1acfa5549b19811380ccc02b5",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "7f995ae6ad8d56bf901b3dd824eefc02da9d02305802b9e33d15a4b8c9618194"
+    },
+    "Environment/env_corner_post_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "f73008393e5d93b63af2f1da418de0b9b249747121cf11175fbd4085422c990f",
+        "buffer_view_count": 3,
+        "json_sha256": "58969b0d0a5f6ac2bb21065d958e3c28d319dd36ec3ae23ddeac1ea85ffb8f6f",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "a26a485760bd9156ac99211fdab029b1e4627b71964840fdb87c61e5a288d1ca"
+    },
+    "Environment/env_fence_chainlink_4m.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "2295822f173875f6ad33fafe8381f07aca6ef61bee9bbee6bb0bff0838d45b84",
+        "buffer_view_count": 3,
+        "json_sha256": "d4d9466d43ef9048778f5bf5d4213a9e87ba45bd8dba1b0f7edcd048c7277f0c",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "e395ae3d6e0f735c1789940b9b432f6b3a8c2eed085a23bd29c7fa92f06be2db"
+    },
+    "Environment/env_gate_sliding_6m.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "b6ad322192f7131caa973943749d70139ea2802f527e21b7ca53178149d78960",
+        "buffer_view_count": 3,
+        "json_sha256": "1aad30a7898f14d17261b408fce2b44f4ae53541bfab49708a26a32bb9d160d9",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "c5eae7ddbf790d2177909e0a471e401dceba48822aa2a81a97b2daa887a6b1f4"
+    },
+    "Environment/env_wall_adobe_4m.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "e279aed5d4124a5f37dc2eba9a20735626679a01d356e5eba5c16395c7f441ce",
+        "buffer_view_count": 3,
+        "json_sha256": "0fde1ad0f7d940952068c17ea4aad656fcae45a5b77e7dfba12411f4a06dfc5d",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "141afdd5b3227f9a8eb0d08cc22c73d4b1137432218a8bacdc6c207be2eb5aca"
+    },
+    "Environment/env_wall_brick_4m.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "960779a873f97075419040cc1b62695274ae81af8a420d59edfb1a50b781853c",
+        "buffer_view_count": 3,
+        "json_sha256": "95a527eb27ed1f71312d4d91dfdc5ab931302d1f79225af390934438de3bc71a",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "ca3d493fb86337b36a4a897ac373c77ade68fe13ee4f769ca99f064ddce5aad8"
+    },
+    "Environment/env_wall_concrete_4m.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "c1ab989cd23d35326bf9c8ac4caaa892cefa80a2440476eb28af6cfd273dda60",
+        "buffer_view_count": 3,
+        "json_sha256": "618da79c4b54835c81db726bf0499d338971855da17d7ab83bdda969a297bdf0",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "219986d845764099fdc88173466808fcb3bcbae0007e878fc2d925d3657065ac"
+    },
+    "Environment/env_watchtower_metal_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "f0933bcd9632b0b6877bbace80c8068f9711063e530f191f4ea1cbaa2fd90fca",
+        "buffer_view_count": 3,
+        "json_sha256": "7c22d2b4f7df5fe98f3c70b4a9e06d19b68af9834619a6b3eb989f7f95331b07",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "0c8d7e7efad4683b7bc266af57ac7b5f13bd98f6a7a10c200edaf70291f8ea3c"
+    },
+    "Environment/prop_breaker_box_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "7c76419255792624fd6222845098b8fae844623848fcccd152034e3f96bec06b",
+        "buffer_view_count": 3,
+        "json_sha256": "400b88b59b026a5b3753ea8ba309143183dad37e448e1c44d50b04353d176f06",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "7b6c6a730a0403ca7db4afb9aa07bd26c48b2720e96a8654db8157a442621aff"
+    },
+    "Environment/prop_concrete_barrier_a.glb": {
+      "barrier": true,
+      "semantic": {
+        "accessor_count": 4,
+        "animation_count": 0,
+        "bin_length": 3966008,
+        "bin_prefix_sha256": "471fd305feb2756f275211f618ea99445e6560838e30fae4d8c982f6341c96ea",
+        "buffer_view_count": 5,
+        "json_sha256": "ea152370a7c9d36ed79e9c0b01c72f728ef5f1c0fc28447ab4ee3a4f6728aefb",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "588e6f344bd97b6f1a44b9f25c2801a72ccf7328a7f7a8cd36c269d6e4a3d435"
+    },
+    "Environment/prop_dumpster_metal_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "b0db5e19cdda0e6659f104ac7e9f92b302c1b84f95780a1c528c2bf09827f0f5",
+        "buffer_view_count": 3,
+        "json_sha256": "eded69233f01f899dfcfc482d53159423f39a28c2da4baa4e489db8855cea5f1",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "26daa02bac06524ee354536257be29de4a1854ea35db55ae6e9846fd6d31e303"
+    },
+    "Environment/prop_generator_diesel_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "dc4a398e6d567108b60bd9975fe1cd6a14eac95cf8131746659f06ba3dbac99e",
+        "buffer_view_count": 3,
+        "json_sha256": "f98505f6e6a1a0312560086b98f5332d36bd861a912975f8ee524a9f8846d517",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "bb85ec93f9d28d44b24cb4741736b469890b6ab31934577c382ab3e74ba8d371"
+    },
+    "Environment/prop_locker_metal_a.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "c27448a946d8aabee2307d7c24f4bea56417d710e7992f9c405413f0560c169a",
+        "buffer_view_count": 3,
+        "json_sha256": "6040e1193b6fbf734a96a099c34bca527bfb8eddd94a83af6989ea1eddb176fc",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "75d32e015bbc0e86bf2992bc047ebc5e9e54526ff4323e9b1bae0001d7ed530a"
+    },
+    "Traps/trap_t10_searchlight_tower.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "a8f9712a6149975719ece4fb2049d998caee04969e22a04042c357e6c9b026b7",
+        "buffer_view_count": 3,
+        "json_sha256": "94a1190e7011d25c09c0fe9478d9d39b2a9c39df3d2265048f593a5471c83bca",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "9357328cb8a1390b5699bea907d262ea153f4bc2bb6d90d9dbd86683fdc49c30"
+    },
+    "Traps/trap_t11_security_camera.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "10b41ea1dc8d4deb4c04f333a80c69979bc8b81ef3d267c306e220bed2dca520",
+        "buffer_view_count": 3,
+        "json_sha256": "02fb27c66d855c5ffe7276e5a2508179d92a48d64980627b5f02541d457e1d50",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "4ce7ee88fddf6fcd6f096de66871d5ce66d90bb5677f1180ba11224c24206cdb"
+    },
+    "Traps/trap_t12_electric_fence.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "1a3aa01775dd1bff611455310ec67ffbc80406f36418d74e2e32b611cd492324",
+        "buffer_view_count": 3,
+        "json_sha256": "ff792e4e57ba690dd961d15d00174e99e91dbedc01eb0f324958902c2c39dd86",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "efee48f44cae5b6d38af7400513d49431ed84aa348bd8a0d724b0dfec1f8fb79"
+    },
+    "Traps/trap_t13_alarmed_door.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "bcc93db10dffb345179e82a4ab06a61632d45a17489b522f09eb014ebdb5df8c",
+        "buffer_view_count": 3,
+        "json_sha256": "2d5d511872e8479e067ef6b3a007ad34b8fab8983802f8800038b1ab8bca0463",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "03094939dac43a650cfccfe4ae464035368d162f38245be683b07139591edcb5"
+    },
+    "Traps/trap_t14_booby_trapped_door.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "5075e74ff15d49f7e3b3513ff04562f146ab484e9a0728a794e0601692772c2c",
+        "buffer_view_count": 3,
+        "json_sha256": "97460617367bdd3e4b5cc212b6e5ad1e10646fe5d611b9c1eb01ed19a6da6fa2",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "892a8a20f0f8182f705bd67a69b98357313ae905f24c592ce37744a18aae662f"
+    },
+    "Traps/trap_t15_dog_patrol_hazard.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "f3fd4e10d7023f368bcb37dc7e51a2bace0dec14f57fb52e040252e65d972829",
+        "buffer_view_count": 3,
+        "json_sha256": "b1e6a792e4d3e5377d39fc4eb0a225fe951f87f6409ff2f326368fb8a89d0d44",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "2d7da6c8cd7702387fa4c381804ba13ede4c3ee7ca7e6ab29a2dcbd9524f005f"
+    },
+    "Traps/trap_t16_env_hazard.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "84d0e10554cf7b7bb799c7ba7948d14a78fdc9ba83c5e7efb61688fbcd11cdef",
+        "buffer_view_count": 3,
+        "json_sha256": "7a61809834095d282143df3c1d09bc7541f1319b800fe67e88f4993067ec45a0",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "25a84578333cc3d805ba3382ac469c2c4adf52065eab9149e1f01a138c4eef39"
+    },
+    "Traps/trap_t1_tripwire_alarm.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "2eb5eedc346ac980feb94f55586275014fbe40a281c0cc64ca0c4b47cc2e821c",
+        "buffer_view_count": 3,
+        "json_sha256": "89a1c1a84c6b462a5c7a7cf17b059c55a33e129e734ba676d893c0a7e9c13d2d",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "3943490ecbb556b00e5d4789906c5fd1ef5d1b37040ec699263852c794b8c01e"
+    },
+    "Traps/trap_t2_tripwire_grenade.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "805c8da506f715da7d7628e45950d80efd34d42671f9057343acb7a0c3cd58f6",
+        "buffer_view_count": 3,
+        "json_sha256": "a66cbbb66d9134d93fe173c53765d38f6e420d4ca80e5c48720fa27f97478a80",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "08c9e22ec58005094df3bfb6d705bc53fcf6921b8e26e497ce0a7d110900a2b6"
+    },
+    "Traps/trap_t3_directional_mine.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "20e499270ba682d9957bbf5ef28761f7c61dfc169ebde2a4e3813370d7435675",
+        "buffer_view_count": 3,
+        "json_sha256": "4916cb81a2800b89763867f12bb0e86d5f4bcbdb2a98331cc5f5f8a038a39ec5",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "1a4b8f5853f189b288f13d20f78119586e84ef088568f400405dcb875a420551"
+    },
+    "Traps/trap_t4_buried_mine.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "f6b39cc02cf791590e9bb69d61267b46da849aa2caff04c63fa8a2bf2c822b6b",
+        "buffer_view_count": 3,
+        "json_sha256": "02fbe6dd3f67bf24f82b5a7158f7b3ca1d376ad18d198a5538c2551d04c73792",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "82ca93de6f3efbea7d0b4f6ac240028726de150abafdf5accccf6f35326703a4"
+    },
+    "Traps/trap_t5_laser_grid.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "4bcc4023e31d36b6fff8129f82a1f6e11e739b1d542a6595458b14037eac193a",
+        "buffer_view_count": 3,
+        "json_sha256": "b99ab1f37e25053818e0472be0f625d32e21027cda4a1de7dbbf0c31aa766ed2",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "6bb0b41e9ecc247a474ed2476217f4fe02fcc7068bf275ddc07aa0822bc0cc51"
+    },
+    "Traps/trap_t6_motion_sensor.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "f1d386f5549ce3c59ff035276d29d1fe14d5e587d521509fff00180d6a0afde8",
+        "buffer_view_count": 3,
+        "json_sha256": "bb1e13adb9fb28a7814173b8406c2c234254a429108be575b126b08d55491782",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "3abe896126266e4fcde46f4336997c034d37725c85ff0c5b36e47d5965488012"
+    },
+    "Traps/trap_t7_pressure_plate.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "bf514d3f33a11a0792f425a775860e1c8a363c375e401e0c8ca6ef9fe807f214",
+        "buffer_view_count": 3,
+        "json_sha256": "01bf51537aa6327f5d450358261d03b438291b59338c2bd5fe31ecbd0605320d",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "83191e403acc45362176cf620d61b19986123255c7a0f29f3244050549c4e3bd"
+    },
+    "Traps/trap_t8_noise_trap.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "92d4e7e342dcc668691243120eb78063e3df3206a43a1cc978a509adad87aa55",
+        "buffer_view_count": 3,
+        "json_sha256": "e18f996ba0a95937b2b95ce4d8ab10c0c1297e9ab8dd46a72d5e2e9cf3c6811c",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "23d76892fde175e03a871f0fdc98f44acf67d7b3d35d8a8765069bf3cdc6c1ad"
+    },
+    "Traps/trap_t9_sentry_turret.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 3,
+        "animation_count": 0,
+        "bin_length": 372,
+        "bin_prefix_sha256": "a615ed2d20e22674db00053c850c4c04392409fd967fd0f70ef907c5c05c094c",
+        "buffer_view_count": 3,
+        "json_sha256": "30bc38671d94a1505e8d27544bc78661fae818027d5204d0a334f3c6e4302436",
+        "material_count": 1,
+        "mesh_count": 1,
+        "node_count": 1,
+        "primitive_count": 1,
+        "skin_count": 0
+      },
+      "source_sha256": "bd501dd97830ee081c7a3b9708404531d6ef30c55b85e3670a21e34875903a7f"
+    },
+    "Weapons/wpn_ak47_m.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "e7ed2727558c26d0bba5ee99c18aa1bb5069ba778c33178ae8c3cef03a6cce2a",
+        "buffer_view_count": 12,
+        "json_sha256": "9adc48ecc20516f8e118783a8dbbd353fd775761eca9e224ce75f8c22ed75a2d",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "aef8dce39d8a6f71acdc8821961345a9e5d35af720374f67cd4f879066dc54d2"
+    },
+    "Weapons/wpn_ak74u_krinkov.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "204aa877ecddae21f3a60314e4bf4eacd44802240a618726bfee568833a89a07",
+        "buffer_view_count": 12,
+        "json_sha256": "67a860adaab04cb2c852afe084c4f2338e6add13be355ced370deb5dfe4694c2",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "43a7c5b9c14bd399d5596c156f7e0e186a5a4fa6d3c34f524193e528dcada9f3"
+    },
+    "Weapons/wpn_aug_a2.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "04254a19517faa1aeab8783dda4ecc99388a5a62385e8634ecf22ef162708dfb",
+        "buffer_view_count": 12,
+        "json_sha256": "78615fd5b044dbb16f6cdcfc52ac665fd3d916a09b6d3a606e7d7298695549f0",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "a5353328920c3810e1a9e5ad7dc1bcf73343a65c835f22b08012bd87fd92d2a5"
+    },
+    "Weapons/wpn_awm_l115a3.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "48e43c1cf437f9d3ad434b9716d31648ca7032cb1c05a81958763ba88275d262",
+        "buffer_view_count": 12,
+        "json_sha256": "8574898a5569f3366fb71a663bdaa0f53382118ecf4220590fdb6ea6faa32b05",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "a466829e1e2cb293c7f6235b5fa6840949976dcea0a363c41f1a64d92c44a909"
+    },
+    "Weapons/wpn_deagle_50ae.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "5dd1dc24e0b6360a124a4994aece35287758ffb3ae146d42f4f4cbc99bbca402",
+        "buffer_view_count": 12,
+        "json_sha256": "7f255f7a4cf9412e45039c0491af6cd280d18819f12b8c7412ccbe513046ce16",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "6ee14010daee7f568471c73cfbe14b32859f066e515e19a26bc00690f41589d5"
+    },
+    "Weapons/wpn_g36c_commando.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "c49b883b58b3d72ff821bc2d10618efa81d653365b89d934d3f9a87eb2a31612",
+        "buffer_view_count": 12,
+        "json_sha256": "be028bd1deed1bdecf87ebbba3ddfa1a35872d8477dab12725f14b83e03fd44a",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "a346d307452294a760a9b7c4fc512e85848c73bfb1d532fefbf79efec147c9af"
+    },
+    "Weapons/wpn_galil_ace.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "baf42f96485c81b763fc9f5c0eb2195a2fe8cf6c6e30484a1510ad8822a2873e",
+        "buffer_view_count": 12,
+        "json_sha256": "37eb97452838374b910d021cb350e1200f879f7ad0fdf4805ddc6efc985836eb",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "7980e9e2d59d136ab59406b10efca621ef8bb2cfa6fd191ce07143720b7aebd7"
+    },
+    "Weapons/wpn_garrote_mesh.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "8d4ce054ec80e13bf07f573fcaaec8be38d8c6762dd2f575d8d71b706e1fcf87",
+        "buffer_view_count": 12,
+        "json_sha256": "a7e6431a08b3c8b4193428e01ea7014dfcd8c4f2df6ef35f922d0c3a2b342f6e",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "ebbc852607708c15b3694b08c3974a705ef1234eba793fb56454a19cbe6591b5"
+    },
+    "Weapons/wpn_glock17_tactical.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "20945b64bf76c45a45820b066007757899f28f45a818b095d976bcc5a2f9127d",
+        "buffer_view_count": 12,
+        "json_sha256": "da4725e732f0536a3d08c79ab4adbd3766c5b93e44f654305400069fb2dfb069",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "0e5034cb240377d12de1abece545519b329512c90be0c48dee248114646a223c"
+    },
+    "Weapons/wpn_knife_mesh.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "53beb0b8730f7dd4730b581f533451df15a7bbb3d7ed1696776462ae414c0fe1",
+        "buffer_view_count": 12,
+        "json_sha256": "68312d6dae2ae6a31f49b065d485318425e789c3359c9617356483349c82249f",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "18586584e888c9db09f0652ca53bc75455ee958d27a78f8843a9b6a64a2c1037"
+    },
+    "Weapons/wpn_m249_saw.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "a4f88f34956cda381ad922276cd629da962eb1ae346c37ce33f2bccfe1b1c3a4",
+        "buffer_view_count": 12,
+        "json_sha256": "c2f195e2e8a23ea04451b1edae8daadfe9e14826c73a7313fdad4cc3ad34ed6e",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "a362f5cb8b1d4d146c402ca9a61e9b8be98e0a686b24c56f0ccd22dae6c7617d"
+    },
+    "Weapons/wpn_m4a1_sopmod.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "94bd70cac8f92e6f7a7f46aa35c80a2f37389dade407fe0d3b97205732ed9c94",
+        "buffer_view_count": 12,
+        "json_sha256": "2f7b940852c54bc4bbb6a4dae3719ef35afb88005dded182c84e2a3bad2a8ddc",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "a7dc40880d1818992d4bbdec268c9aebfa157e6821322adfd12f8aa4b091d24d"
+    },
+    "Weapons/wpn_m82_barrett.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "0aa4e2b971d8a63d738e34aa36e2187d40b06387949f30104ca879b7d0104dea",
+        "buffer_view_count": 12,
+        "json_sha256": "26db9b3a6cafcb200a1ba53d43aae56d1ad3e829e520e207a36d483e9bd6dc17",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "9ecdbde0445f4f0f10175c57ea70bc1565829ca3f5cd0dac7ee1bdebf0ae63b0"
+    },
+    "Weapons/wpn_m870_breacher.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "c30d791304584002f0295515f46615a796d55815b499b77df714be558202a2ae",
+        "buffer_view_count": 12,
+        "json_sha256": "9135fc3dca41ff9d2252b3df6f6ca8acbc9450fb853de66f313788d18c98bedf",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "8c5083c91fece2101806b005de24b5db491373cb3f533d10f1020231a6a77a2d"
+    },
+    "Weapons/wpn_m9_beretta.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "e6638951a036b680d498fc9047dff2c8438ab9cbefb534030c3670a4e4e1522f",
+        "buffer_view_count": 12,
+        "json_sha256": "8701f4038155bc94aad57d7306bbde5e9dc52081ce6e5b1cad87b11d926b77c7",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "8c396616f20bd33c82b198ce6a7318687590c0655ae8ac890b37241e67831a09"
+    },
+    "Weapons/wpn_makarov_pm.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "1e32985910428fae203f9a3e8ce4ecdd5b5870c1a96f23a2f82dd135e43de561",
+        "buffer_view_count": 12,
+        "json_sha256": "f5e2ae6c60c17a067a79fb1365a4c8f0414517f4d0387a1f7523bf06d316a015",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "6065a50af4adc0f914c0e77904292d94b202cb9182550a4678a02ead59b65048"
+    },
+    "Weapons/wpn_mp5a3_tactical.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "b14dff9f40fd2734d267608d13a0c7e4d258ff8cfc95656a7c667d75faf0ad82",
+        "buffer_view_count": 12,
+        "json_sha256": "5bbd5aec729f5d6d779624d621187114fb1db2c494af5d010a2aaa7c9697f3c9",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "005e4df8ff76019373e3a940aa7557c518a240cc83edc41ba85f505af58e7580"
+    },
+    "Weapons/wpn_mp5sd_integral.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "1abe463783f9a02bc5342c99841119541d851b1600577975793e31b6d416bead",
+        "buffer_view_count": 12,
+        "json_sha256": "9571d8d36d49737d1407f2e8a3757b398839d97572972987db83fad470aca8f4",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "f3769ee2d0bd6f91ced991ad624f081b3a09ae7505795c5820b7ae0f6db17fcd"
+    },
+    "Weapons/wpn_p90_pdw.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "24605a8290df6e3512935bd728bce196a8c4d1d7cd06878454c3477b30ba2bfe",
+        "buffer_view_count": 12,
+        "json_sha256": "0a2333543135eb853cec91922bd0161ec7c4e974b4c9999c07c04a8b72632c95",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "a000f67e314151bb52d6e2887644e2110edf3fcf2f815038bc1c5dc369d054ad"
+    },
+    "Weapons/wpn_pp19_bizon.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "fe099b87a9a27161796d0d6a02b85b19a5ada875b6ea08ff3879d8577aeae57a",
+        "buffer_view_count": 12,
+        "json_sha256": "e009c08e18af9492be4a5f37dcfd5e2b503ec048fa09478b4e6157b35694bfa1",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "d56364148632e0e5420488d854ff47df5b93dc8525e1885e33d8d44a5466e97a"
+    },
+    "Weapons/wpn_rpg7_launcher.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "548d168ac25c46ec6a9455385bc503155307128693bfa91a10b31fa068e9a1b6",
+        "buffer_view_count": 12,
+        "json_sha256": "562406d7ebc2a7dd29456f5ef8a41b434ec550a638acc57515418ffa23875a09",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "6e4713a4388ffe210c46afacf1476ea8eb14964478df401fe349efd41ab9b202"
+    },
+    "Weapons/wpn_saiga12_auto.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "8e4550b11eb25b44cf9cbd1f8d41692f22ac9f6770d0826e1dbfff747d9052ec",
+        "buffer_view_count": 12,
+        "json_sha256": "448ffd06e584ce9bcbf18d6d7a6557bd8f8c116f321feb658d3967050c8688ba",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "164b843d6127ce400b1bb1ad382578df3bedc1cbbd76f98399cc95d742ba6fc3"
+    },
+    "Weapons/wpn_spas12_tactical.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "af41c8b1109540a8563324364f12988a65cfd51a145928e4bce8b2fe458ef711",
+        "buffer_view_count": 12,
+        "json_sha256": "41f2c9c2cf7571507f64d6bc0f24f60caf83f620b4779b67c37ba4cf8a2da940",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "f44b61e91332705769ecba4086a782287718e392a837e7e9f7bb70051d0ed56b"
+    },
+    "Weapons/wpn_svd_dragunov.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "8074ba1fc0ce23cba5f810b0842190a8c618aa4859571881dee1655f29017a73",
+        "buffer_view_count": 12,
+        "json_sha256": "17b06ec16fc212a725a8d3d545d458c04c7e08fa1cb386809964055a98f87a83",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "3fd9b8df335dd793013aadc035cbbebf32271990ebccb416226085bf6beb9d89"
+    },
+    "Weapons/wpn_usp45_suppressed.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "624a9bbe64e1d844bf7f5458560b2771f8eb1e364c8a7e5b575725b3bbd8fd34",
+        "buffer_view_count": 12,
+        "json_sha256": "b95bfda7391c686e77ad36150f6218bd8cee8202b9b3f831fe01e3bbbad2074d",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "a30d8d632e7d54a25b9e8ca4ff65bcbca80280527419b16d23a999149fb7f10a"
+    },
+    "Weapons/wpn_uzi_pro.glb": {
+      "barrier": false,
+      "semantic": {
+        "accessor_count": 12,
+        "animation_count": 0,
+        "bin_length": 2208,
+        "bin_prefix_sha256": "80538089eaeaf4f0de8efd000af51d302dcda2260d56da454cc025544b8a97ca",
+        "buffer_view_count": 12,
+        "json_sha256": "bdecd5eda47b99141fc4399b3e733eb8f1158737300176a87c7385d95b7550be",
+        "material_count": 1,
+        "mesh_count": 4,
+        "node_count": 11,
+        "primitive_count": 4,
+        "skin_count": 0
+      },
+      "source_sha256": "14c7950825d8d923487de281eebb21fccc8071d7a6f8ddb10a02aefa26b2435d"
+    }
+  },
+  "pipeline_version": 1
+}

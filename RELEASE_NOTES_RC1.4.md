@@ -1,0 +1,9 @@
+# Project Real Loser RC1.4 — Unity-first repair pass
+
+RC1.4 mein Android/WebGL StreamingAssets busy-wait hata kar coroutine-based mission loading aur asset preloading lagayi gayi. Camera definitions spawn/register hoti hain, authored player ko weapon system milta hai, mission reload par stale streaming cells clear hote hain, aur M01–M10 objective/extraction target coordinates mission JSON se bind hote hain.
+
+Gameplay source fixes mein enemy line-of-sight occlusion, centralized firing/ammo/damage, trap countermeasure/time validation, alarm/hazard cooldowns, mobile joystick release/cancel reset, pause/settings Back behavior, streaming registration aur checkpoint integrity checksum shamil hain. Mission data mein M01/M02 zone IDs, M05 camera mount aur duplicate alarm representation durust ki gayi; validator ka cross-reference coverage barhaya. Legacy HTML spawn infinite loop bhi bounded deterministic placement se fix hua, lekin woh 2D prototype hai—Unity game nahi.
+
+Verification: M01–M10 mission validator pass; phase-0 self-test plus 10 mission-specific verifiers pass; Python compile pass; mission copies 40/40 byte-identical; 23 Unity C# files grammar parse pass; targeted camera, player weapon, tile reset, objective binding aur no-busy-wait source assertions pass; HTML syntax plus 10 deterministic generations pass.
+
+**Abhi baqi:** Unity Editor compilation, Play Mode, Android APK build, device/touch QA aur performance profile nahi chale. Objective completion abhi generic proximity checks hai; mission-specific multi-step conditions jaise M06 all-manifolds/detonation, M08 truck delivery/checkpoints, required kills/hacks aur event-order gates abhi complete nahi. Isay patched Unity source candidate samjhein—not a verified or release-ready game, aur IGI 1 se behtar hone ka claim sabit nahi.

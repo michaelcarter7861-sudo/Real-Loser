@@ -1,0 +1,61 @@
+name: Unity 2022.3.40f1 Android APK Build (GameCI)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate-and-build-unity-apk:
+    name: Validate Phase 0 Gate & Build Unity Android ARM64 APK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11 for Anti-Cheat Validation Gate
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Phase 0 Anti-Cheat Validation Suite v3 (All 10 Missions + Assets)
+        run: |
+          python3 validate_levels_v3.py M01.json M02.json M03.json M04.json M05.json M06.json M07.json M08.json M09.json M10.json
+          python3 validate_characters.py Assets/_Project/Art/Characters
+          python3 validate_weapons.py Assets/_Project/Art/Weapons
+          python3 validate_audio.py Assets/_Project/Audio
+          python3 tests/verify_m10_compoundzero.py M10.json
+
+      - name: Cache Unity Library
+        uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-Unity2022.3.40f1-Android-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-Unity2022.3.40f1-Android-
+
+      - name: Build Unity Android ARM64 IL2CPP APK
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: Android
+          unityVersion: 2022.3.40f1
+          buildMethod: RealLoser.Editor.RealLoserProjectBuilder.BuildAndroidAPK
+          buildsPath: Builds
+          buildName: ProjectRealLoser_v1.0
+
+      - name: Upload ProjectRealLoser_v1.0_Unity.apk Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ProjectRealLoser_v1.0_Unity
+          path: |
+            Builds/Android/*.apk
+            Builds/**/*.apk
+          if-no-files-found: error

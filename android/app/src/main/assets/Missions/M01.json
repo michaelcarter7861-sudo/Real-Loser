@@ -1,0 +1,5167 @@
+{
+  "mission_id": "M01",
+  "title": "Boot Camp",
+  "chapter": 1,
+  "scene_name": "M01",
+  "width": 300.0,
+  "height": 300.0,
+  "area_hectares": 9.0,
+  "biome": "forest",
+  "time_of_day": "day",
+  "weather": "clear",
+  "player_start": {
+    "pos": [
+      20.0,
+      10.0,
+      0.0
+    ],
+    "facing_deg": 0.0,
+    "facing_cardinal": "North",
+    "starting_loadout": [
+      "wpn_usp45_suppressed",
+      "wpn_knife_mesh",
+      "WireCutters",
+      "HackPDA",
+      "Lockpick"
+    ]
+  },
+  "strict_exclusions_enforced": {
+    "forbidden_enemies": [
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14"
+    ],
+    "forbidden_traps": [
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T9",
+      "T12",
+      "T15"
+    ],
+    "enable_ziplines": false,
+    "enable_sam_sites": false,
+    "enable_heavy_vehicles": false
+  },
+  "zones": [
+    {
+      "id": "ZONE_A",
+      "name": "Insertion & Stealth Movement Course",
+      "zone_type": "wilderness",
+      "rect": [
+        0.0,
+        0.0,
+        150.0,
+        100.0
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        150.0,
+        100.0
+      ],
+      "description": "Dense pine tree line and boulder cover leading to the low crawl trench at (60, 55) and gravel noise hazard M01_T8_01 at (75, 62)."
+    },
+    {
+      "id": "ZONE_B",
+      "name": "Indoor Close-Quarters & Lockpick/Vent House",
+      "zone_type": "interior",
+      "rect": [
+        150.0,
+        0.0,
+        300.0,
+        100.0
+      ],
+      "bounds": [
+        150.0,
+        0.0,
+        300.0,
+        100.0
+      ],
+      "description": "1-story concrete training kill-house ([180, 25] to [260, 85]) with 4 entry points (front, back, roof hatch ladder, vent shaft) and 3 interior rooms (R1 Entry, R2 Control Room, R3 Vault/Office)."
+    },
+    {
+      "id": "ZONE_C",
+      "name": "Central Fenced Yard & Tripwire Alley",
+      "zone_type": "camp",
+      "rect": [
+        0.0,
+        100.0,
+        300.0,
+        160.0
+      ],
+      "bounds": [
+        0.0,
+        100.0,
+        300.0,
+        160.0
+      ],
+      "description": "Continuous chain-link fenced yard along y=105 and y=155 with sliding gate at (130, 105), cuttable fence at (45, 105), tripwires, gravel trap, pressure plate shed, and guard booth at (142, 110)."
+    },
+    {
+      "id": "ZONE_D",
+      "name": "West Perimeter Watchtower & Pillbox",
+      "zone_type": "perimeter",
+      "rect": [
+        0.0,
+        160.0,
+        150.0,
+        260.0
+      ],
+      "bounds": [
+        0.0,
+        160.0,
+        150.0,
+        260.0
+      ],
+      "description": "West perimeter sector with metal watchtower at (40, 210) and concrete pillbox bunker at (95, 195) fortified with sandbag walls."
+    },
+    {
+      "id": "ZONE_E",
+      "name": "Live Guard Compound & Command Tent",
+      "zone_type": "camp",
+      "rect": [
+        150.0,
+        160.0,
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        150.0,
+        160.0,
+        300.0,
+        300.0
+      ],
+      "description": "Live infiltration compound ([165, 175] to [285, 275]) with watchtower at (275, 185), camera M01_T11_02 at (195, 180), alarm panel M01_ALM_01 at (215, 220), Command Tent at (220, 230), and 4 E1 Militia Grunts."
+    },
+    {
+      "id": "ZONE_F",
+      "name": "North Extraction Hut",
+      "zone_type": "camp",
+      "rect": [
+        0.0,
+        260.0,
+        150.0,
+        300.0
+      ],
+      "bounds": [
+        0.0,
+        260.0,
+        150.0,
+        300.0
+      ],
+      "description": "Northern extraction clearing with Briefing/Extraction Hut at (150, 295) (radius 10.0m)."
+    }
+  ],
+  "objectives": {
+    "primary": [
+      {
+        "id": "O1",
+        "title": "Pass stations A to E and reach Command Tent at (220, 230)",
+        "target_pos": [
+          220.0,
+          230.0,
+          0.0
+        ],
+        "zone": "ZONE_E",
+        "unlock_reward": "P-9 Compact"
+      }
+    ],
+    "secondary": [
+      {
+        "id": "S1",
+        "title": "Disable security camera monitor in Zone B Control Room",
+        "target_id": "M01_MON_01",
+        "target_pos": [
+          222.0,
+          52.0,
+          0.0
+        ],
+        "zone": "ZONE_B"
+      },
+      {
+        "id": "S2",
+        "title": "Collect all 3 Trainer Notes & finish Zone E without raising an alert (Ghost Medal)",
+        "required_pickups": [
+          "M01_NOTE_01",
+          "M01_NOTE_02",
+          "M01_NOTE_03"
+        ],
+        "max_alert_allowed": 0,
+        "medal_reward": "Ghost Medal"
+      }
+    ],
+    "extraction": {
+      "id": "EXT_01",
+      "title": "Extract at North Extraction Hut (150, 295)",
+      "pos": [
+        150.0,
+        295.0,
+        0.0
+      ],
+      "radius": 10.0,
+      "zone": "ZONE_F"
+    }
+  },
+  "routes": {
+    "silent": {
+      "name": "Silent Route (Wire Cutters, Crouch/Prone Trench & West Fence Breach)",
+      "description": "Crawl through Zone A trench (60, 55), cut Zone C West fence at (45, 105) & disarm M01_T1_01, advance along West compound road to (160, 230), enter Command Tent West doorway to (220, 230), and extract at (150, 295).",
+      "tools_required": [
+        "Wire Cutters"
+      ],
+      "waypoints": [
+        [
+          20.0,
+          10.0
+        ],
+        [
+          60.0,
+          55.0
+        ],
+        [
+          45.0,
+          105.0
+        ],
+        [
+          160.0,
+          230.0
+        ],
+        [
+          220.0,
+          230.0
+        ],
+        [
+          150.0,
+          295.0
+        ]
+      ]
+    },
+    "technical": {
+      "name": "Technical Route (Zone B Vent/Lockpick, Camera Monitor Disable & Gate Access)",
+      "description": "Advance from (20, 10) to Zone B Vent Shaft (210, 25), enter R2 Control Room at (210, 52) to disable camera monitor M01_MON_01 (S1), exit North to (210, 165), enter Command Tent South doorway to (220, 230), and extract at (150, 295).",
+      "tools_required": [
+        "Hacking PDA",
+        "Lockpick"
+      ],
+      "waypoints": [
+        [
+          20.0,
+          10.0
+        ],
+        [
+          210.0,
+          25.0
+        ],
+        [
+          210.0,
+          52.0
+        ],
+        [
+          210.0,
+          165.0
+        ],
+        [
+          220.0,
+          230.0
+        ],
+        [
+          150.0,
+          295.0
+        ]
+      ]
+    },
+    "loud": {
+      "name": "Loud / Overwatch Route (Sandbag Cover, Watchtower Overwatch & Direct Breach)",
+      "description": "Advance through Zone A boulder cover (105, 65), breach Central Gate at (130, 105), secure overwatch near Zone D Pillbox corridor at (95, 230), assault Command Tent (220, 230), and extract at (150, 295).",
+      "tools_required": [
+        "Overwatch Cover",
+        "9mm Sidearm"
+      ],
+      "waypoints": [
+        [
+          20.0,
+          10.0
+        ],
+        [
+          105.0,
+          65.0
+        ],
+        [
+          130.0,
+          105.0
+        ],
+        [
+          95.0,
+          230.0
+        ],
+        [
+          220.0,
+          230.0
+        ],
+        [
+          150.0,
+          295.0
+        ]
+      ]
+    }
+  },
+  "structures": [
+    {
+      "id": "M01_BLDG_KILLHOUSE",
+      "type": "env_bldg_killhouse_a",
+      "pos": [
+        220.0,
+        55.0,
+        0.0
+      ],
+      "bounds": [
+        180.0,
+        25.0,
+        260.0,
+        85.0
+      ],
+      "height": 4.2,
+      "entry_points": {
+        "front_door": [
+          180.0,
+          55.0
+        ],
+        "back_door": [
+          260.0,
+          55.0
+        ],
+        "roof_hatch_ladder": [
+          222.0,
+          85.0
+        ],
+        "vent_shaft": [
+          210.0,
+          25.0
+        ]
+      },
+      "doorways": [
+        [
+          180.0,
+          55.0
+        ],
+        [
+          260.0,
+          55.0
+        ],
+        [
+          210.0,
+          25.0
+        ],
+        [
+          210.0,
+          85.0
+        ],
+        [
+          210.0,
+          55.0
+        ],
+        [
+          235.0,
+          55.0
+        ]
+      ],
+      "rooms": [
+        {
+          "id": "R1",
+          "name": "Entry Room",
+          "bounds": [
+            180.0,
+            25.0,
+            210.0,
+            85.0
+          ]
+        },
+        {
+          "id": "R2",
+          "name": "Control Room",
+          "bounds": [
+            210.0,
+            25.0,
+            235.0,
+            85.0
+          ]
+        },
+        {
+          "id": "R3",
+          "name": "Vault/Office",
+          "bounds": [
+            235.0,
+            25.0,
+            260.0,
+            85.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M01_ROOF_LADDER_B",
+      "type": "env_ladder_metal_4m",
+      "pos": [
+        222.0,
+        85.0,
+        0.0
+      ],
+      "height": 4.2,
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_VENT_SHAFT_B",
+      "type": "env_vent_shaft_2m",
+      "pos": [
+        210.0,
+        25.0,
+        0.5
+      ],
+      "zone": "ZONE_B",
+      "connects": [
+        "EXTERIOR_SOUTH",
+        "R2_CONTROL_ROOM"
+      ]
+    },
+    {
+      "id": "M01_KH_WALL_W1",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        180.0,
+        59.0,
+        0.0
+      ],
+      "start": [
+        180.0,
+        57.0
+      ],
+      "end": [
+        180.0,
+        61.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_KH_WALL_W2",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        180.0,
+        63.0,
+        0.0
+      ],
+      "start": [
+        180.0,
+        61.0
+      ],
+      "end": [
+        180.0,
+        65.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_KH_WALL_S1",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        206.0,
+        25.0,
+        0.0
+      ],
+      "start": [
+        204.0,
+        25.0
+      ],
+      "end": [
+        208.0,
+        25.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_KH_WALL_W3",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        180.0,
+        67.0,
+        0.0
+      ],
+      "start": [
+        180.0,
+        65.0
+      ],
+      "end": [
+        180.0,
+        69.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_KH_WALL_S2",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        214.0,
+        25.0,
+        0.0
+      ],
+      "start": [
+        212.0,
+        25.0
+      ],
+      "end": [
+        216.0,
+        25.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_KH_WALL_E1",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        260.0,
+        59.0,
+        0.0
+      ],
+      "start": [
+        260.0,
+        57.0
+      ],
+      "end": [
+        260.0,
+        61.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_KH_WALL_N2",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        226.0,
+        85.0,
+        0.0
+      ],
+      "start": [
+        224.0,
+        85.0
+      ],
+      "end": [
+        228.0,
+        85.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_KH_WALL_N1",
+      "type": "env_wall_concrete_4m",
+      "pos": [
+        218.0,
+        85.0,
+        0.0
+      ],
+      "start": [
+        216.0,
+        85.0
+      ],
+      "end": [
+        220.0,
+        85.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_GUARD_BOOTH_C",
+      "type": "env_guard_booth_a",
+      "pos": [
+        142.0,
+        110.0,
+        0.0
+      ],
+      "bounds": [
+        139.0,
+        107.0,
+        145.0,
+        113.0
+      ],
+      "doorways": [
+        [
+          142.0,
+          107.0
+        ],
+        [
+          142.0,
+          113.0
+        ],
+        [
+          139.0,
+          110.0
+        ],
+        [
+          145.0,
+          110.0
+        ]
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_CHECKPOINT_SHED_C",
+      "type": "env_bldg_guardhouse_a",
+      "pos": [
+        210.0,
+        140.0,
+        0.0
+      ],
+      "bounds": [
+        205.0,
+        135.0,
+        215.0,
+        145.0
+      ],
+      "doorways": [
+        [
+          205.0,
+          140.0
+        ],
+        [
+          215.0,
+          140.0
+        ],
+        [
+          210.0,
+          135.0
+        ],
+        [
+          210.0,
+          145.0
+        ]
+      ],
+      "zone": "ZONE_C",
+      "description": "Covered training checkpoint shed housing pressure plate M01_T7_02."
+    },
+    {
+      "id": "M01_FENCE_C_S01",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        49.0,
+        105.0,
+        0.0
+      ],
+      "start": [
+        47.0,
+        105.0
+      ],
+      "end": [
+        51.0,
+        105.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_CUTTABLE",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        45.0,
+        105.0,
+        0.0
+      ],
+      "start": [
+        43.0,
+        105.0
+      ],
+      "end": [
+        47.0,
+        105.0
+      ],
+      "rot_y": 0.0,
+      "cuttable": true
+    },
+    {
+      "id": "M01_FENCE_C_W01",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        43.0,
+        107.0,
+        0.0
+      ],
+      "start": [
+        43.0,
+        105.0
+      ],
+      "end": [
+        43.0,
+        109.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_FENCE_C_E01",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        51.0,
+        107.0,
+        0.0
+      ],
+      "start": [
+        51.0,
+        105.0
+      ],
+      "end": [
+        51.0,
+        109.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_LATRINE_SHED_E",
+      "type": "env_latrine_wooden_a",
+      "pos": [
+        266.8,
+        258.2,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_FENCE_C_N01",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        45.0,
+        109.0,
+        0.0
+      ],
+      "start": [
+        43.0,
+        109.0
+      ],
+      "end": [
+        47.0,
+        109.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_GATE_C_MAIN",
+      "type": "env_gate_sliding_6m",
+      "pos": [
+        130.0,
+        105.0,
+        0.0
+      ],
+      "start": [
+        127.0,
+        105.0
+      ],
+      "end": [
+        133.0,
+        105.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_G_W",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        125.0,
+        105.0,
+        0.0
+      ],
+      "start": [
+        123.0,
+        105.0
+      ],
+      "end": [
+        127.0,
+        105.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_G_E2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        139.0,
+        106.0,
+        0.0
+      ],
+      "start": [
+        137.0,
+        105.0
+      ],
+      "end": [
+        139.0,
+        107.0
+      ],
+      "rot_y": 45.0
+    },
+    {
+      "id": "M01_FENCE_C_G_E",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        135.0,
+        105.0,
+        0.0
+      ],
+      "start": [
+        133.0,
+        105.0
+      ],
+      "end": [
+        137.0,
+        105.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_G_W2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        123.0,
+        107.0,
+        0.0
+      ],
+      "start": [
+        123.0,
+        105.0
+      ],
+      "end": [
+        123.0,
+        109.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_FENCE_C_G_N1",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        127.0,
+        109.0,
+        0.0
+      ],
+      "start": [
+        123.0,
+        109.0
+      ],
+      "end": [
+        131.0,
+        109.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_Y155_1",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        207.0,
+        155.0,
+        0.0
+      ],
+      "start": [
+        205.0,
+        155.0
+      ],
+      "end": [
+        209.0,
+        155.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_G_N2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        135.0,
+        109.0,
+        0.0
+      ],
+      "start": [
+        131.0,
+        109.0
+      ],
+      "end": [
+        139.0,
+        109.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_Y155_2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        211.0,
+        155.0,
+        0.0
+      ],
+      "start": [
+        209.0,
+        155.0
+      ],
+      "end": [
+        213.0,
+        155.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_Y155_3",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        214.0,
+        155.0,
+        0.0
+      ],
+      "start": [
+        213.0,
+        155.0
+      ],
+      "end": [
+        215.0,
+        155.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_Y155_E",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        215.0,
+        150.0,
+        0.0
+      ],
+      "start": [
+        215.0,
+        145.0
+      ],
+      "end": [
+        215.0,
+        155.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_FENCE_C_Y155_W",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        205.0,
+        150.0,
+        0.0
+      ],
+      "start": [
+        205.0,
+        145.0
+      ],
+      "end": [
+        205.0,
+        155.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_WATCHTOWER_D",
+      "type": "env_watchtower_metal_a",
+      "pos": [
+        40.0,
+        210.0,
+        0.0
+      ],
+      "radius": 3.5,
+      "height": 8.5,
+      "has_ladder": true,
+      "ladder_pos": [
+        40.0,
+        207.0,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PILLBOX_D",
+      "type": "env_bunker_pillbox_a",
+      "pos": [
+        95.0,
+        195.0,
+        0.0
+      ],
+      "bounds": [
+        92.0,
+        192.0,
+        98.0,
+        198.0
+      ],
+      "doorways": [
+        [
+          95.0,
+          192.0
+        ],
+        [
+          95.0,
+          198.0
+        ],
+        [
+          92.0,
+          195.0
+        ],
+        [
+          98.0,
+          195.0
+        ]
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_TENT_BARRACKS_E",
+      "type": "env_bldg_barracks_a",
+      "pos": [
+        185.0,
+        205.0,
+        0.0
+      ],
+      "bounds": [
+        179.0,
+        199.0,
+        191.0,
+        211.0
+      ],
+      "doorways": [
+        [
+          185.0,
+          199.0
+        ],
+        [
+          185.0,
+          211.0
+        ],
+        [
+          191.0,
+          205.0
+        ],
+        [
+          179.0,
+          205.0
+        ]
+      ],
+      "zone": "ZONE_E",
+      "description": "Barracks tent housing sleeping sentry M01_E1_01 at (185, 205)."
+    },
+    {
+      "id": "M01_WATCHTOWER_E",
+      "type": "env_watchtower_metal_a",
+      "pos": [
+        275.0,
+        185.0,
+        0.0
+      ],
+      "radius": 3.5,
+      "height": 8.5,
+      "has_ladder": true,
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_TENT_COMMAND_E",
+      "type": "prop_tent_command_a",
+      "pos": [
+        220.0,
+        230.0,
+        0.0
+      ],
+      "bounds": [
+        217.0,
+        227.0,
+        223.0,
+        233.0
+      ],
+      "doorways": [
+        [
+          220.0,
+          227.0
+        ],
+        [
+          220.0,
+          233.0
+        ],
+        [
+          217.0,
+          230.0
+        ],
+        [
+          217.0,
+          232.5
+        ],
+        [
+          223.0,
+          230.0
+        ]
+      ],
+      "zone": "ZONE_E",
+      "description": "Command Tent at (220, 230) \u2014 Primary Objective O1 & Trainer Note #3."
+    },
+    {
+      "id": "M01_SEC_WALL_E_CAM02",
+      "type": "env_bldg_guardhouse_a",
+      "pos": [
+        195.0,
+        183.0,
+        0.0
+      ],
+      "bounds": [
+        192.0,
+        180.0,
+        198.0,
+        186.0
+      ],
+      "doorways": [
+        [
+          195.0,
+          180.0
+        ],
+        [
+          195.0,
+          186.0
+        ]
+      ],
+      "zone": "ZONE_E",
+      "description": "Compound South security post supporting wall-mounted camera M01_T11_02 at (195, 180)."
+    },
+    {
+      "id": "M01_COMP_E_SW1",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        167.0,
+        175.0,
+        0.0
+      ],
+      "start": [
+        165.0,
+        175.0
+      ],
+      "end": [
+        169.0,
+        175.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_GATE_S",
+      "type": "env_gate_sliding_6m",
+      "pos": [
+        172.0,
+        175.0,
+        0.0
+      ],
+      "start": [
+        169.0,
+        175.0
+      ],
+      "end": [
+        175.0,
+        175.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_FENCE_C_N02",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        49.0,
+        109.0,
+        0.0
+      ],
+      "start": [
+        47.0,
+        109.0
+      ],
+      "end": [
+        51.0,
+        109.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_SW3",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        183.0,
+        175.0,
+        0.0
+      ],
+      "start": [
+        179.0,
+        175.0
+      ],
+      "end": [
+        187.0,
+        175.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_SE1",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        202.5,
+        177.5,
+        0.0
+      ],
+      "start": [
+        198.0,
+        180.0
+      ],
+      "end": [
+        207.0,
+        175.0
+      ],
+      "rot_y": -30.0
+    },
+    {
+      "id": "M01_COMP_E_SW4",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        189.5,
+        177.5,
+        0.0
+      ],
+      "start": [
+        187.0,
+        175.0
+      ],
+      "end": [
+        192.0,
+        180.0
+      ],
+      "rot_y": 45.0
+    },
+    {
+      "id": "M01_COMP_E_SE2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        215.0,
+        175.0,
+        0.0
+      ],
+      "start": [
+        207.0,
+        175.0
+      ],
+      "end": [
+        223.0,
+        175.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_SE3",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        235.0,
+        175.0,
+        0.0
+      ],
+      "start": [
+        223.0,
+        175.0
+      ],
+      "end": [
+        247.0,
+        175.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_SE5",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        278.0,
+        175.0,
+        0.0
+      ],
+      "start": [
+        271.0,
+        175.0
+      ],
+      "end": [
+        285.0,
+        175.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_SE4",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        259.0,
+        175.0,
+        0.0
+      ],
+      "start": [
+        247.0,
+        175.0
+      ],
+      "end": [
+        271.0,
+        175.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_E1",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        285.0,
+        195.0,
+        0.0
+      ],
+      "start": [
+        285.0,
+        175.0
+      ],
+      "end": [
+        285.0,
+        215.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_COMP_E_E2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        285.0,
+        235.0,
+        0.0
+      ],
+      "start": [
+        285.0,
+        215.0
+      ],
+      "end": [
+        285.0,
+        255.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_COMP_E_N1",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        265.0,
+        275.0,
+        0.0
+      ],
+      "start": [
+        285.0,
+        275.0
+      ],
+      "end": [
+        245.0,
+        275.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_E3",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        285.0,
+        265.0,
+        0.0
+      ],
+      "start": [
+        285.0,
+        255.0
+      ],
+      "end": [
+        285.0,
+        275.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_COMP_E_N2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        225.0,
+        275.0,
+        0.0
+      ],
+      "start": [
+        245.0,
+        275.0
+      ],
+      "end": [
+        205.0,
+        275.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_N3",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        185.0,
+        275.0,
+        0.0
+      ],
+      "start": [
+        205.0,
+        275.0
+      ],
+      "end": [
+        165.0,
+        275.0
+      ],
+      "rot_y": 0.0
+    },
+    {
+      "id": "M01_COMP_E_GATE_W",
+      "type": "env_gate_sliding_6m",
+      "pos": [
+        165.0,
+        240.0,
+        0.0
+      ],
+      "start": [
+        165.0,
+        245.0
+      ],
+      "end": [
+        165.0,
+        235.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_COMP_E_W1",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        165.0,
+        260.0,
+        0.0
+      ],
+      "start": [
+        165.0,
+        275.0
+      ],
+      "end": [
+        165.0,
+        245.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_COMP_E_W2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        165.0,
+        215.0,
+        0.0
+      ],
+      "start": [
+        165.0,
+        235.0
+      ],
+      "end": [
+        165.0,
+        195.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_COMP_E_W3",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        165.0,
+        185.0,
+        0.0
+      ],
+      "start": [
+        165.0,
+        195.0
+      ],
+      "end": [
+        165.0,
+        175.0
+      ],
+      "rot_y": 90.0
+    },
+    {
+      "id": "M01_CRAWL_TRENCH_A",
+      "type": "env_crawl_trench_timber_a",
+      "pos": [
+        60.0,
+        55.0,
+        -0.4
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_EXTRACTION_HUT_F",
+      "type": "env_bldg_extraction_hut_a",
+      "pos": [
+        150.0,
+        295.0,
+        0.0
+      ],
+      "bounds": [
+        147.0,
+        292.0,
+        153.0,
+        298.0
+      ],
+      "extraction_radius": 10.0,
+      "doorways": [
+        [
+          150.0,
+          292.0
+        ],
+        [
+          150.0,
+          298.0
+        ],
+        [
+          147.0,
+          295.0
+        ],
+        [
+          153.0,
+          292.5
+        ],
+        [
+          153.0,
+          295.0
+        ]
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_INSERTION_CANOPY_A",
+      "type": "env_camo_net_canopy_a",
+      "pos": [
+        24.0,
+        16.0,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_HURDLE_WALL_A1",
+      "type": "env_training_hurdle_low_a",
+      "pos": [
+        38.5,
+        31.2,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_GRAVEL_PIT_FRAME_A",
+      "type": "env_gravel_pit_frame_a",
+      "pos": [
+        75.0,
+        62.0,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_HURDLE_WALL_A2",
+      "type": "env_training_hurdle_low_a",
+      "pos": [
+        47.2,
+        42.8,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COMMS_MAST_D",
+      "type": "env_antenna_mast_small_a",
+      "pos": [
+        52.4,
+        218.6,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_SUPPLY_DEPOT_SHED_E",
+      "type": "env_supply_carport_a",
+      "pos": [
+        254.2,
+        208.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_HELIPAD_MARKER_F",
+      "type": "env_extraction_pad_marker_a",
+      "pos": [
+        132.4,
+        286.8,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_COMP_E_SW2",
+      "type": "env_fence_chainlink_4m",
+      "pos": [
+        177.0,
+        175.0,
+        0.0
+      ],
+      "start": [
+        175.0,
+        175.0
+      ],
+      "end": [
+        179.0,
+        175.0
+      ],
+      "rot_y": 0.0
+    }
+  ],
+  "props": [
+    {
+      "id": "M01_MON_01",
+      "type": "prop_terminal_desk_a",
+      "name": "Zone B Control Room Security Camera Monitor",
+      "pos": [
+        222.0,
+        52.0,
+        0.0
+      ],
+      "zone": "ZONE_B",
+      "room": "R2",
+      "controls_camera_id": "M01_CAM_01",
+      "objective_id": "S1"
+    },
+    {
+      "id": "M01_PRP_001",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        198.5,
+        58.59,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_ALM_01",
+      "type": "prop_alarm_panel_a",
+      "name": "Zone E Compound Master Alarm Panel",
+      "pos": [
+        215.0,
+        220.0,
+        1.3
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_002",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        158.62,
+        106.57,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_003",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        24.38,
+        229.01,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_005",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        65.56,
+        271.9,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_004",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        278.44,
+        227.9,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_006",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        102.22,
+        87.85,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_007",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        179.38,
+        37.67,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_009",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        46.03,
+        241.33,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_008",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        249.19,
+        113.0,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_010",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        233.02,
+        231.77,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_011",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        19.16,
+        266.9,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_013",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        220.81,
+        51.84,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_012",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        130.48,
+        66.42,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_014",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        190.97,
+        120.95,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_015",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        39.84,
+        244.95,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_017",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        62.47,
+        268.21,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_016",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        259.73,
+        217.07,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_018",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        75.52,
+        78.17,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_019",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        165.03,
+        63.32,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_021",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        66.14,
+        234.08,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_020",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        271.83,
+        109.22,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_022",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        250.38,
+        219.91,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_023",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        33.08,
+        272.34,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_025",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        196.91,
+        41.5,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_024",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        119.49,
+        89.0,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_026",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        181.27,
+        115.15,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_027",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        13.55,
+        236.74,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_029",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        73.3,
+        264.18,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_028",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        269.09,
+        236.15,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_030",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        97.51,
+        67.57,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_031",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        187.34,
+        52.97,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_033",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        56.86,
+        249.05,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_032",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        226.55,
+        117.04,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_034",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        231.68,
+        212.17,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_035",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        29.98,
+        269.71,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_037",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        207.27,
+        56.34,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_036",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        141.48,
+        82.09,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_038",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        202.29,
+        109.85,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_039",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        32.88,
+        226.6,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_041",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        49.32,
+        274.18,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_040",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        264.41,
+        225.32,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_042",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        85.73,
+        85.55,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_043",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        162.64,
+        46.22,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_045",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        76.2,
+        237.95,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_044",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        266.98,
+        111.24,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_046",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        240.36,
+        237.44,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_047",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        40.04,
+        265.67,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_049",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        204.08,
+        48.69,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_048",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        114.0,
+        71.49,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_050",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        157.01,
+        119.19,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_051",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        23.6,
+        253.16,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_053",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        70.98,
+        270.15,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_052",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        277.77,
+        213.46,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_054",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        107.71,
+        74.95,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_055",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        173.8,
+        60.17,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_057",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        49.9,
+        230.7,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_056",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        237.87,
+        107.45,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_058",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        236.36,
+        229.71,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_059",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        16.84,
+        271.46,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_061",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        218.42,
+        39.25,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_060",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        128.13,
+        86.7,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_062",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        199.05,
+        113.89,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_063",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        43.71,
+        243.02,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_065",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        57.05,
+        267.51,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_064",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        255.06,
+        233.57,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_066",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        81.02,
+        64.04,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_067",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        170.61,
+        49.52,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_069",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        65.37,
+        245.35,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_068",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        283.15,
+        119.65,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_070",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        249.71,
+        217.5,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_071",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        38.49,
+        268.36,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_073",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        190.13,
+        63.69,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_072",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        124.99,
+        78.56,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_074",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        167.52,
+        107.91,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_075",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        16.25,
+        231.59,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_077",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        76.0,
+        272.84,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_076",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        271.42,
+        221.37,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_078",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        93.97,
+        90.31,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_079",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        183.76,
+        42.77,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_081",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        59.57,
+        235.21,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_080",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        232.21,
+        115.86,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_082",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        226.0,
+        234.52,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_083",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        23.41,
+        264.67,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_085",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        212.45,
+        54.24,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_084",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        134.8,
+        68.88,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_086",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        212.8,
+        117.76,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_087",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        31.72,
+        250.42,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_089",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        54.35,
+        268.8,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_088",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        263.41,
+        209.51,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_090",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        90.83,
+        79.71,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_091",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        156.66,
+        56.72,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_093",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        70.39,
+        227.0,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_092",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        254.85,
+        110.06,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_094",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        243.37,
+        225.75,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_095",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        43.52,
+        274.33,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_097",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        201.29,
+        43.89,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_096",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        111.25,
+        83.17,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_098",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        164.29,
+        111.95,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_099",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        27.08,
+        239.31,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_101",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        65.18,
+        266.17,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_100",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        280.78,
+        238.9,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_102",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        101.83,
+        72.8,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_103",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        178.98,
+        47.27,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_105",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        48.74,
+        251.63,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_104",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        248.38,
+        118.39,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_106",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        235.35,
+        214.92,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_107",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        21.86,
+        270.64,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_109",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        223.6,
+        61.44,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_108",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        133.23,
+        76.25,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_110",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        185.31,
+        106.15,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_111",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        37.14,
+        228.21,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_113",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        59.76,
+        271.61,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_112",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        257.4,
+        227.04,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_114",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        77.49,
+        87.08,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_115",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        167.02,
+        39.62,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_117",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        68.07,
+        243.42,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_116",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        275.87,
+        114.1,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_118",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        252.05,
+        230.91,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_119",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        31.92,
+        266.6,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_121",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        195.71,
+        51.09,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_120",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        118.31,
+        65.65,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_122",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        178.84,
+        120.53,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_123",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        15.48,
+        247.04,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_125",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        75.23,
+        267.92,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_124",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        270.76,
+        219.3,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_126",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        99.47,
+        77.4,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_127",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        189.34,
+        62.57,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_129",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        54.15,
+        233.28,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_128",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        220.89,
+        108.8,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_130",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        229.34,
+        223.17,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_131",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        27.28,
+        273.45,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_133",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        210.05,
+        40.45,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_132",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        138.73,
+        91.92,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_134",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        207.95,
+        114.56,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_135",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        35.59,
+        235.61,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_137",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        48.93,
+        264.82,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_136",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        266.75,
+        234.95,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_138",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        85.34,
+        69.26,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_139",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        162.24,
+        54.62,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_141",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        75.81,
+        247.92,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_140",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        266.17,
+        116.45,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_142",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        242.7,
+        210.97,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_143",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        42.75,
+        269.3,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_145",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        206.87,
+        57.99,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_144",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        116.74,
+        81.02,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_146",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        150.13,
+        110.77,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_147",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        20.31,
+        225.47,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_149",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        67.69,
+        273.77,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_148",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        274.93,
+        224.12,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_150",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        104.38,
+        84.47,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_151",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        175.19,
+        45.17,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_153",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        51.25,
+        240.68,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_152",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        240.7,
+        112.67,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_154",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        237.52,
+        240.37,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_155",
+      "type": "prop_weapon_rack_empty_a",
+      "pos": [
+        15.1,
+        265.26,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_157",
+      "type": "prop_fuel_drum_metal_a",
+      "pos": [
+        216.63,
+        47.64,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_156",
+      "type": "prop_ammo_crate_wood_a",
+      "pos": [
+        126.36,
+        70.41,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_158",
+      "type": "prop_radio_field_desk_a",
+      "pos": [
+        195.42,
+        118.6,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_159",
+      "type": "prop_workbench_tools_a",
+      "pos": [
+        41.97,
+        252.03,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_161",
+      "type": "prop_camouflage_crate_a",
+      "pos": [
+        58.41,
+        270.79,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_PRP_160",
+      "type": "prop_target_silhouette_a",
+      "pos": [
+        256.23,
+        215.35,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PRP_162",
+      "type": "prop_water_jerrycan_a",
+      "pos": [
+        82.39,
+        73.87,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PRP_163",
+      "type": "prop_field_cot_bed_a",
+      "pos": [
+        172.0,
+        59.12,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PRP_165",
+      "type": "prop_cable_spool_wood_a",
+      "pos": [
+        62.08,
+        229.58,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PRP_164",
+      "type": "prop_map_board_easel_a",
+      "pos": [
+        285.98,
+        106.86,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PRP_166",
+      "type": "prop_searchlight_battery_a",
+      "pos": [
+        246.88,
+        228.5,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    }
+  ],
+  "cover": [
+    {
+      "id": "M01_COV_001",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        16.2,
+        14.8,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_003",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        33.7,
+        36.4,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_002",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        28.4,
+        19.1,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_004",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        41.9,
+        27.3,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_005",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        49.6,
+        51.8,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_007",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        64.8,
+        48.9,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_006",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        57.3,
+        63.2,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_008",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        71.2,
+        74.6,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_009",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        79.5,
+        54.1,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_011",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        94.1,
+        43.2,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_010",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        86.4,
+        68.7,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_012",
+      "type": "prop_crate_military_a",
+      "pos": [
+        103.8,
+        61.5,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_013",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        111.4,
+        38.9,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_015",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        126.3,
+        49.8,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_014",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        119.7,
+        72.4,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_016",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        134.9,
+        66.1,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_017",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        142.6,
+        33.7,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_019",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        158.4,
+        28.6,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_018",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        147.1,
+        84.3,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_COV_020",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        166.9,
+        51.2,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_021",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        173.2,
+        69.8,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_023",
+      "type": "prop_crate_military_a",
+      "pos": [
+        188.6,
+        33.2,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_022",
+      "type": "prop_crate_military_a",
+      "pos": [
+        176.8,
+        41.4,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_024",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        198.4,
+        68.6,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_025",
+      "type": "prop_crate_military_a",
+      "pos": [
+        204.2,
+        42.8,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_027",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        228.4,
+        71.2,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_026",
+      "type": "prop_crate_military_a",
+      "pos": [
+        218.6,
+        38.4,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_028",
+      "type": "prop_crate_military_a",
+      "pos": [
+        242.8,
+        36.9,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_029",
+      "type": "prop_crate_military_a",
+      "pos": [
+        251.6,
+        69.4,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_031",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        274.8,
+        63.7,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_030",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        267.4,
+        48.2,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_032",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        281.3,
+        29.4,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_033",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        289.6,
+        56.1,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_035",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        18.6,
+        114.2,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_034",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        294.2,
+        81.8,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_COV_036",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        31.4,
+        128.9,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_037",
+      "type": "prop_crate_military_a",
+      "pos": [
+        39.8,
+        118.4,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_039",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        67.9,
+        136.8,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_038",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        54.2,
+        122.6,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_040",
+      "type": "prop_crate_military_a",
+      "pos": [
+        81.3,
+        119.5,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_041",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        95.6,
+        141.2,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_043",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        119.2,
+        115.8,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_042",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        108.4,
+        126.7,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_044",
+      "type": "prop_crate_military_a",
+      "pos": [
+        136.8,
+        132.4,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_045",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        151.4,
+        121.9,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_047",
+      "type": "prop_crate_military_a",
+      "pos": [
+        182.6,
+        127.3,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_046",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        169.8,
+        144.6,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_048",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        196.4,
+        138.8,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_049",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        223.8,
+        131.2,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_051",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        258.2,
+        119.4,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_050",
+      "type": "prop_crate_military_a",
+      "pos": [
+        239.4,
+        146.7,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_052",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        276.9,
+        139.1,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_COV_053",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        27.4,
+        196.8,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_055",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        46.8,
+        203.2,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_054",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        34.2,
+        204.6,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_056",
+      "type": "prop_crate_military_a",
+      "pos": [
+        45.2,
+        216.9,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_057",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        58.6,
+        184.4,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_059",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        84.6,
+        191.2,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_058",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        71.9,
+        208.3,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_060",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        88.2,
+        198.6,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_061",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        92.4,
+        187.8,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_063",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        102.4,
+        194.8,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_062",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        98.6,
+        188.4,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_064",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        96.8,
+        202.4,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_065",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        106.2,
+        212.6,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_067",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        121.4,
+        234.6,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_066",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        114.8,
+        182.9,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_068",
+      "type": "prop_crate_military_a",
+      "pos": [
+        129.8,
+        206.4,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_069",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        138.2,
+        189.7,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_071",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        171.4,
+        188.2,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_070",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        144.6,
+        228.2,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_COV_072",
+      "type": "prop_crate_military_a",
+      "pos": [
+        176.8,
+        222.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_073",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        184.2,
+        184.6,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_075",
+      "type": "prop_crate_military_a",
+      "pos": [
+        203.4,
+        216.8,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_074",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        196.8,
+        194.2,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_076",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        209.6,
+        232.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_077",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        213.8,
+        198.6,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_079",
+      "type": "prop_crate_military_a",
+      "pos": [
+        234.6,
+        238.9,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_078",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        228.4,
+        218.2,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_080",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        241.2,
+        192.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_081",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        249.8,
+        224.6,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_083",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        262.8,
+        189.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_082",
+      "type": "prop_crate_military_a",
+      "pos": [
+        256.4,
+        246.2,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_084",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        268.4,
+        219.8,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_085",
+      "type": "prop_crate_military_a",
+      "pos": [
+        272.6,
+        239.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_087",
+      "type": "prop_crate_military_a",
+      "pos": [
+        261.4,
+        264.8,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_086",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        279.2,
+        202.6,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_088",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        224.8,
+        262.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_COV_089",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        42.6,
+        268.4,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_COV_091",
+      "type": "env_rock_boulder_a",
+      "pos": [
+        88.4,
+        271.6,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_COV_090",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        64.8,
+        279.2,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_COV_092",
+      "type": "prop_crate_military_a",
+      "pos": [
+        104.2,
+        286.4,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_COV_093",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        119.6,
+        272.8,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_COV_095",
+      "type": "prop_sandbag_wall_a",
+      "pos": [
+        142.4,
+        283.6,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_COV_094",
+      "type": "prop_concrete_barrier_a",
+      "pos": [
+        136.8,
+        291.2,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_COV_096",
+      "type": "prop_crate_military_a",
+      "pos": [
+        158.6,
+        287.4,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    }
+  ],
+  "vegetation": [
+    {
+      "id": "M01_VEG_01",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        12.4,
+        18.6,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_02",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        26.8,
+        22.4,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_03",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        18.2,
+        39.5,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_04",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        34.6,
+        28.9,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_05",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        44.1,
+        19.2,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_06",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        52.8,
+        37.4,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_07",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        68.4,
+        24.7,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_08",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        83.9,
+        48.2,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_09",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        97.3,
+        31.6,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_10",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        112.5,
+        59.8,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_11",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        128.7,
+        22.1,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_12",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        141.2,
+        78.4,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_VEG_13",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        162.8,
+        19.4,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_VEG_14",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        278.4,
+        34.2,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_VEG_15",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        286.9,
+        74.6,
+        0.0
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_VEG_16",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        22.6,
+        124.8,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_VEG_17",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        78.4,
+        148.2,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_VEG_18",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        248.6,
+        128.4,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_VEG_19",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        19.4,
+        178.6,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_VEG_20",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        64.2,
+        226.4,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_VEG_21",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        122.8,
+        174.2,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_VEG_22",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        136.4,
+        246.8,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_VEG_23",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        172.4,
+        258.6,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_VEG_24",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        291.2,
+        214.8,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_VEG_25",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        34.8,
+        274.2,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_VEG_26",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        76.2,
+        284.6,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_VEG_27",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        114.6,
+        278.4,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    },
+    {
+      "id": "M01_VEG_28",
+      "type": "env_tree_pine_tall_a",
+      "pos": [
+        164.2,
+        291.8,
+        0.0
+      ],
+      "zone": "ZONE_F"
+    }
+  ],
+  "lights": [
+    {
+      "id": "M01_LGT_01",
+      "type": "light_caged_bulb_warm",
+      "pos": [
+        192.0,
+        55.0,
+        3.6
+      ],
+      "zone": "ZONE_B",
+      "room": "R1",
+      "range_m": 12.0
+    },
+    {
+      "id": "M01_LGT_02",
+      "type": "light_fluorescent_tube",
+      "pos": [
+        222.0,
+        55.0,
+        3.6
+      ],
+      "zone": "ZONE_B",
+      "room": "R2",
+      "range_m": 12.0
+    },
+    {
+      "id": "M01_LGT_03",
+      "type": "light_caged_bulb_warm",
+      "pos": [
+        248.0,
+        55.0,
+        3.6
+      ],
+      "zone": "ZONE_B",
+      "room": "R3",
+      "range_m": 12.0
+    },
+    {
+      "id": "M01_LGT_04",
+      "type": "light_flood_gate_pole",
+      "pos": [
+        132.0,
+        106.5,
+        5.2
+      ],
+      "zone": "ZONE_C",
+      "range_m": 18.0
+    },
+    {
+      "id": "M01_LGT_05",
+      "type": "light_bunker_lantern",
+      "pos": [
+        95.0,
+        195.0,
+        2.6
+      ],
+      "zone": "ZONE_D",
+      "range_m": 10.0
+    },
+    {
+      "id": "M01_LGT_06",
+      "type": "light_tent_lantern_a",
+      "pos": [
+        185.0,
+        205.0,
+        2.8
+      ],
+      "zone": "ZONE_E",
+      "range_m": 11.0
+    },
+    {
+      "id": "M01_LGT_07",
+      "type": "light_command_table_lamp",
+      "pos": [
+        220.0,
+        230.0,
+        2.9
+      ],
+      "zone": "ZONE_E",
+      "range_m": 14.0
+    },
+    {
+      "id": "M01_LGT_08",
+      "type": "light_extraction_beacon",
+      "pos": [
+        150.0,
+        295.0,
+        3.8
+      ],
+      "zone": "ZONE_F",
+      "range_m": 16.0
+    }
+  ],
+  "hiding_spots": [
+    {
+      "id": "M01_HIDE_01",
+      "type": "prop_locker_metal_a",
+      "pos": [
+        186.5,
+        48.0,
+        0.0
+      ],
+      "zone": "ZONE_B",
+      "room": "R1"
+    },
+    {
+      "id": "M01_HIDE_02",
+      "type": "vent_shaft",
+      "pos": [
+        212.5,
+        30.0,
+        0.0
+      ],
+      "zone": "ZONE_B",
+      "room": "R2"
+    },
+    {
+      "id": "M01_HIDE_03",
+      "type": "closet_storage_a",
+      "pos": [
+        254.0,
+        76.0,
+        0.0
+      ],
+      "zone": "ZONE_B",
+      "room": "R3"
+    },
+    {
+      "id": "M01_HIDE_04",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        48.5,
+        46.2,
+        0.0
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_HIDE_05",
+      "type": "prop_dumpster_metal_a",
+      "pos": [
+        146.5,
+        114.2,
+        0.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_HIDE_06",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        82.4,
+        188.6,
+        0.0
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_HIDE_07",
+      "type": "prop_locker_metal_a",
+      "pos": [
+        181.2,
+        209.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_HIDE_08",
+      "type": "prop_dumpster_metal_a",
+      "pos": [
+        208.6,
+        186.4,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_HIDE_09",
+      "type": "env_bush_stealth_a",
+      "pos": [
+        238.4,
+        242.8,
+        0.0
+      ],
+      "zone": "ZONE_E"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "M01_E1_01",
+      "class": "E1",
+      "name": "Militia Grunt Sentry (Sleeping in Barracks)",
+      "weapon": "wpn_mp9_mesh",
+      "has_radio": false,
+      "sleeper": true,
+      "pos": [
+        185.0,
+        205.0,
+        0.0
+      ],
+      "zone": "ZONE_E",
+      "patrol_waypoints": [
+        [
+          185.0,
+          205.0
+        ],
+        [
+          186.8,
+          205.4
+        ],
+        [
+          185.6,
+          207.2
+        ]
+      ]
+    },
+    {
+      "id": "M01_E1_02",
+      "class": "E1",
+      "name": "Militia Grunt Road Patrol (West-South Road)",
+      "weapon": "wpn_mp9_mesh",
+      "has_radio": false,
+      "sleeper": false,
+      "pos": [
+        160.0,
+        170.0,
+        0.0
+      ],
+      "zone": "ZONE_E",
+      "patrol_waypoints": [
+        [
+          160.0,
+          170.0
+        ],
+        [
+          160.0,
+          240.0
+        ],
+        [
+          210.0,
+          240.0
+        ]
+      ]
+    },
+    {
+      "id": "M01_E1_03",
+      "class": "E1",
+      "name": "Militia Grunt Command Tent Guard",
+      "weapon": "wpn_mp9_mesh",
+      "has_radio": false,
+      "sleeper": false,
+      "pos": [
+        215.0,
+        210.0,
+        0.0
+      ],
+      "zone": "ZONE_E",
+      "patrol_waypoints": [
+        [
+          215.0,
+          210.0
+        ],
+        [
+          245.0,
+          210.0
+        ],
+        [
+          245.0,
+          250.0
+        ],
+        [
+          215.0,
+          250.0
+        ]
+      ]
+    },
+    {
+      "id": "M01_E1_04",
+      "class": "E1",
+      "name": "Militia Grunt Zone D/E Border Patrol",
+      "weapon": "wpn_mp9_mesh",
+      "has_radio": false,
+      "sleeper": false,
+      "pos": [
+        110.0,
+        220.0,
+        0.0
+      ],
+      "zone": "ZONE_D",
+      "patrol_waypoints": [
+        [
+          110.0,
+          220.0
+        ],
+        [
+          155.0,
+          220.0
+        ],
+        [
+          155.0,
+          265.0
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "id": "M01_T8_01",
+      "type": "T8",
+      "name": "Gravel & Tin Cans Noise Hazard #1",
+      "pos": [
+        75.0,
+        62.0,
+        0.0
+      ],
+      "zone": "ZONE_A",
+      "noise_radius_m": 15.0,
+      "counter": "Crouch walk or Prone crawl around gravel pit"
+    },
+    {
+      "id": "M01_T7_01",
+      "type": "T7",
+      "name": "Kill-House Entry Floor Pressure Plate #1",
+      "pos": [
+        195.0,
+        55.0,
+        0.0
+      ],
+      "zone": "ZONE_B",
+      "room": "R1",
+      "counter": "Jump 1.0m over plate or disarm (2.5s)"
+    },
+    {
+      "id": "M01_CAM_01",
+      "type": "T11",
+      "name": "Kill-House Exterior West Panning Camera #1",
+      "pos": [
+        180.0,
+        65.0,
+        3.2
+      ],
+      "zone": "ZONE_B",
+      "mounted_on": "M01_BLDG_KILLHOUSE",
+      "cone_deg": 70.0,
+      "range_m": 35.0,
+      "linked_monitor_id": "M01_MON_01",
+      "counter": "Disable M01_MON_01 in Zone B R2 Control Room, EMP, or shoot"
+    },
+    {
+      "id": "M01_T1_01",
+      "type": "T1",
+      "name": "West Fence Breach Tripwire Alarm #1",
+      "pos": [
+        45.0,
+        112.0,
+        0.2
+      ],
+      "zone": "ZONE_C",
+      "noise_radius_m": 40.0,
+      "counter": "Wire Cutters (2.0s)"
+    },
+    {
+      "id": "M01_T1_02",
+      "type": "T1",
+      "name": "Central Gate Alley Tripwire Alarm #2",
+      "pos": [
+        130.0,
+        125.0,
+        0.2
+      ],
+      "zone": "ZONE_C",
+      "noise_radius_m": 40.0,
+      "counter": "Wire Cutters (2.0s)"
+    },
+    {
+      "id": "M01_T8_02",
+      "type": "T8",
+      "name": "Central Yard Gravel Noise Hazard #2",
+      "pos": [
+        165.0,
+        135.0,
+        0.0
+      ],
+      "zone": "ZONE_C",
+      "noise_radius_m": 15.0,
+      "counter": "Crouch walk or bypass"
+    },
+    {
+      "id": "M01_T7_02",
+      "type": "T7",
+      "name": "East Yard Checkpoint Shed Pressure Plate #2",
+      "pos": [
+        210.0,
+        140.0,
+        0.0
+      ],
+      "zone": "ZONE_C",
+      "counter": "Jump 1.0m or disarm (2.5s)"
+    },
+    {
+      "id": "M01_T11_02",
+      "type": "T11",
+      "name": "Zone E Compound South Wall Security Camera #2",
+      "pos": [
+        195.0,
+        180.0,
+        3.4
+      ],
+      "zone": "ZONE_E",
+      "mounted_on": "M01_SEC_WALL_E_CAM02",
+      "cone_deg": 70.0,
+      "range_m": 35.0,
+      "counter": "EMP, hack, or time sweep gap"
+    }
+  ],
+  "cameras": [
+    {
+      "id": "M01_CAM_01",
+      "type": "T11",
+      "pos": [
+        180.0,
+        65.0,
+        3.2
+      ],
+      "yaw_min": 145.0,
+      "yaw_max": 235.0,
+      "fov_deg": 70.0,
+      "range_m": 35.0,
+      "monitor_id": "M01_MON_01",
+      "secondary_camera_id": "M01_T11_02"
+    }
+  ],
+  "pickups": [
+    {
+      "id": "M01_NOTE_01",
+      "type": "pickup_trainer_note",
+      "name": "Trainer Note #1: Kill-House CQB & Camera Bypass",
+      "pos": [
+        248.5,
+        62.0,
+        1.0
+      ],
+      "zone": "ZONE_B",
+      "room": "R3"
+    },
+    {
+      "id": "M01_NOTE_02",
+      "type": "pickup_trainer_note",
+      "name": "Trainer Note #2: Tripwire Countermeasures",
+      "pos": [
+        142.0,
+        110.0,
+        1.0
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_NOTE_03",
+      "type": "pickup_trainer_note",
+      "name": "Trainer Note #3: Ghost Infiltration Doctrine",
+      "pos": [
+        220.0,
+        230.0,
+        1.0
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PKP_04",
+      "type": "pickup_gadget_wirecutters",
+      "name": "Tactical Wire Cutters",
+      "pos": [
+        56.2,
+        48.4,
+        0.8
+      ],
+      "zone": "ZONE_A"
+    },
+    {
+      "id": "M01_PKP_05",
+      "type": "pickup_gadget_lockpick",
+      "name": "Field Lockpick Kit",
+      "pos": [
+        168.4,
+        42.6,
+        0.9
+      ],
+      "zone": "ZONE_B"
+    },
+    {
+      "id": "M01_PKP_06",
+      "type": "pickup_gadget_hack_pda",
+      "name": "Tactical Hack PDA",
+      "pos": [
+        190.2,
+        36.8,
+        1.0
+      ],
+      "zone": "ZONE_B",
+      "room": "R1"
+    },
+    {
+      "id": "M01_PKP_07",
+      "type": "pickup_keycard_training",
+      "name": "Zone B Vault Keycard",
+      "pos": [
+        224.6,
+        64.2,
+        1.0
+      ],
+      "zone": "ZONE_B",
+      "room": "R2"
+    },
+    {
+      "id": "M01_PKP_08",
+      "type": "pickup_ammo_9mm_box",
+      "name": "9x19mm Parabellum Box",
+      "pos": [
+        138.4,
+        118.6,
+        0.8
+      ],
+      "zone": "ZONE_C"
+    },
+    {
+      "id": "M01_PKP_09",
+      "type": "pickup_medkit_field",
+      "name": "First-Aid Field Dressing",
+      "pos": [
+        41.2,
+        211.4,
+        6.2
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PKP_10",
+      "type": "pickup_ammo_9mm_box",
+      "name": "9x19mm Parabellum Box",
+      "pos": [
+        96.4,
+        196.2,
+        0.9
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PKP_11",
+      "type": "pickup_gadget_binoculars",
+      "name": "Recon Binoculars",
+      "pos": [
+        93.2,
+        193.8,
+        1.1
+      ],
+      "zone": "ZONE_D"
+    },
+    {
+      "id": "M01_PKP_12",
+      "type": "pickup_medkit_field",
+      "name": "First-Aid Field Dressing",
+      "pos": [
+        188.4,
+        202.6,
+        0.8
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PKP_13",
+      "type": "pickup_ammo_9mm_box",
+      "name": "9x19mm Subsonic Box",
+      "pos": [
+        274.2,
+        186.4,
+        6.2
+      ],
+      "zone": "ZONE_E"
+    },
+    {
+      "id": "M01_PKP_14",
+      "type": "pickup_reward_p9_compact",
+      "name": "P-9 Compact Sidearm Case (O1 Unlock)",
+      "pos": [
+        221.2,
+        231.0,
+        1.0
+      ],
+      "zone": "ZONE_E"
+    }
+  ],
+  "census": {
+    "structures": 67,
+    "props": 168,
+    "cover": 96,
+    "vegetation": 28,
+    "lights": 8,
+    "hiding_spots": 9,
+    "enemies": 4,
+    "traps": 8,
+    "cameras": 1,
+    "pickups": 14
+  }
+}
