@@ -72,7 +72,7 @@ namespace RealLoserStudio.Tactical.UI
         private bool _isStanceButtonHeld;
         private bool _proneTriggeredOnHold;
 
-        [Header("Context Action Button & Progress Ring")]
+        [field:Header("Context Action Button & Progress Ring")]
         public bool isContextActionActive { get; private set; }
         public float contextActionProgress01 { get; private set; }
         private float _contextActionRequiredDuration;
