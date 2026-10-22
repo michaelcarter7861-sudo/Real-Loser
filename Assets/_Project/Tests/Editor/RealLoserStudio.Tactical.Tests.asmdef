@@ -1,7 +1,10 @@
 {
     "name": "RealLoserStudio.Tactical.Tests",
     "rootNamespace": "RealLoserStudio.Tactical.Tests",
-    "references": [],
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
     "includePlatforms": [
         "Editor"
     ],
