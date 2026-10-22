@@ -307,13 +307,6 @@ namespace RealLoserStudio.Tactical.Core
             }
             if (spawnedPlayer != null)
             {
-                for (int i = 0; i < _spawnedTrapList.Count; i++)
-                {
-                    if (_spawnedTrapList[i] != null && _spawnedTrapList[i].gameObject.activeInHierarchy)
-                    {
-                        _spawnedTrapList[i].TickTrap(spawnedPlayer, dt);
-                    }
-                }
                 for (int i = 0; i < _spawnedEnemies.Count; i++)
                 {
                     if (_spawnedEnemies[i] != null && _spawnedEnemies[i].gameObject.activeInHierarchy)
