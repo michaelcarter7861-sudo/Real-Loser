@@ -72,7 +72,7 @@ namespace RealLoserStudio.Tactical.UI
         private bool _isStanceButtonHeld;
         private bool _proneTriggeredOnHold;
 
-        [field:Header("Context Action Button & Progress Ring")]
+        [field: Header("Context Action Button & Progress Ring")]
         public bool isContextActionActive { get; private set; }
         public float contextActionProgress01 { get; private set; }
         private float _contextActionRequiredDuration;
@@ -574,7 +574,7 @@ namespace RealLoserStudio.Tactical.UI
             AddPointerEntry(trigger, EventTriggerType.PointerDown, () => OnVirtualJoystickPointerDown(input));
             AddPointerEntry(trigger, EventTriggerType.PointerUp, OnVirtualJoystickPointerUp);
             AddPointerEntry(trigger, EventTriggerType.PointerExit, OnVirtualJoystickPointerCancel);
-            AddPointerEntry(trigger, EventTriggerType.PointerCancel, OnVirtualJoystickPointerCancel);
+            AddPointerEntry(trigger, EventTriggerType.Cancel, OnVirtualJoystickPointerCancel);
             return button;
         }
 
